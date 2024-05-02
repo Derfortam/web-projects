@@ -4,8 +4,8 @@ console.log(dataBookGenre)
 
 if (dataBookGenre) {
    let localPath
-   if (dataBookGenre === "fiction") localPath = "../backend/fiction.json"
-   else if (dataBookGenre === "fantasy") localPath = "../backend/fantasy.json"
+   if (dataBookGenre === "fiction") localPath = "https://derfortam.github.io/web-projects/booknook/backend/fiction.json"
+   else if (dataBookGenre === "fantasy") localPath = "https://derfortam.github.io/web-projects/booknook/backend/fantasy.json"
    fetch(localPath)
       .then(pesponce => pesponce.json())
       .then(json => {
