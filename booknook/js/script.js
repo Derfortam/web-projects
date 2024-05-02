@@ -483,7 +483,7 @@ if (spollers) {
 // ==========================
 //fetch categories swiper
 
-fetch("../backend/categories.json")
+fetch("https://derfortam.github.io/web-projects/booknook/backend/categories.json")
    .then(pesponce => pesponce.json())
    .then(json => {
       const categoriesWrapper = document.querySelector("#categoriesWrapper")
