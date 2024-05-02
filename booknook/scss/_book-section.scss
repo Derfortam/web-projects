@@ -1,0 +1,212 @@
+.book-section {
+   // .swiper-navigation__lines .swiper-pagination-bullet {
+   //    gap: toRem(0);
+   // }
+
+   &__section {
+      display: block;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(100);
+      padding: toRem(50);
+      border: 1px solid $black15;
+      border-radius: toRem(12);
+
+      @media (max-width: toEm(820)) {
+         padding: 0;
+         border: none;
+      }
+      &--margin {
+         margin-bottom: toRem(150);
+         @media (max-width: toEm(900)) {
+            margin-bottom: toRem(100);
+         }
+         @media (max-width: toEm(600)) {
+            margin-bottom: toRem(80);
+         }
+      }
+   }
+
+   &__legend {
+      padding: toRem(10) toRem(24);
+      background-color: $yellow45;
+      color: $absoluteBlack;
+      border-radius: toRem(8);
+      font-weight: 600;
+      @media (max-width: toEm(820)) {
+         display: none;
+      }
+   }
+
+   // tabs----------------
+
+   &__tabs {
+      display: none;
+      @media (max-width: toEm(820)) {
+         display: flex;
+         align-items: center;
+         background-color: $black06;
+         border-radius: toRem(8);
+         border: 1px solid $black15;
+         padding: toRem(8);
+         margin-bottom: toRem(30);
+      }
+   }
+
+   &__tablinks {
+      border-radius: toRem(6);
+      padding: toRem(15) toRem(30);
+      color: $absoluteWhite;
+      width: 100%;
+      text-align: center;
+      line-height: 1.3;
+      &.active {
+         background-color: $black12;
+      }
+   }
+
+   &__tabcontent {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s;
+      &.active {
+         visibility: visible;
+         opacity: 1;
+      }
+   }
+
+   // ----------------------
+
+   &__block-slider {
+   }
+
+   &__titling {
+   }
+
+   &__title-titling {
+   }
+
+   &__swiper-navigation {
+      @media (max-width: toEm(1400)) {
+         display: none;
+      }
+   }
+
+   &__arrow-swiper-navigation {
+   }
+
+   &__pagination {
+   }
+
+   &__lines-swiper-navigation {
+      @media (max-width: toEm(1400)) {
+         gap: 0;
+         display: flex;
+         padding-top: toRem(20);
+         justify-content: center;
+         border-radius: 0;
+         .swiper-pagination-bullet {
+            margin: 0 !important;
+         }
+         .swiper-pagination-bullet {
+            border-radius: 0;
+            &:last-child {
+               border-radius: 0 toRem(100) toRem(100) 0;
+            }
+            &:first-child {
+               border-radius: toRem(100) 0 0 toRem(100);
+            }
+         }
+         .swiper-pagination-bullet-active {
+            border-radius: toRem(100) !important;
+         }
+      }
+   }
+
+   &__body-slider {
+      height: 100%;
+   }
+
+   &__swiper {
+   }
+
+   &__wrapper {
+   }
+
+   &__slide {
+      height: 100%;
+   }
+
+   &__images {
+   }
+
+   &__img {
+   }
+
+   &__info-slide {
+   }
+
+   &__name {
+      // text-align: justify;
+   }
+   &__science-name {
+      font-size: toRem(16);
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 1px;
+   }
+
+   &__arrow {
+   }
+}
+
+.titling {
+   &__title {
+   }
+}
+.titling--align {
+}
+.titling--margin-other {
+}
+.swiper-navigation {
+   &__arrow {
+   }
+
+   &__pagination {
+   }
+
+   &__lines {
+   }
+}
+
+/* Сховати вміст всіх табів, крім першого */
+.tabcontent {
+   display: none;
+}
+
+// /* Забезпечити відображення активного табу */
+.tabcontent.active {
+   display: block;
+}
+
+// /* Стилізувати кнопки табів */
+// .tablinks {
+//    background-color: #f2f2f2;
+//    border: 1px solid #ccc;
+//    cursor: pointer;
+//    padding: 10px 20px;
+// }
+
+// /* Забезпечити відображення активного табу */
+// .tablinks.active {
+//    background-color: #ddd;
+// }
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+   height: 100%;
+}
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+   height: 100%;
+}

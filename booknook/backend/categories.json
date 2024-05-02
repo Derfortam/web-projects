@@ -1,0 +1,38 @@
+[
+   {
+      "id": 1,
+      "link": "#",
+      "image": "img/page/movie-categories/novels.webp",
+      "name": "Романи"
+   },
+   {
+      "id": 2,
+      "link": "genres.html",
+      "image": "img/page/movie-categories/sciense-fiction.jpg",
+      "name": "Фантастика"
+   },
+   {
+      "id": 3,
+      "link": "#",
+      "image": "img/page/movie-categories/science.png",
+      "name": "Наукова література"
+   },
+   {
+      "id": 4,
+      "link": "#",
+      "image": "img/page/movie-categories/detective.webp",
+      "name": "Детектив"
+   },
+   {
+      "id": 5,
+      "link": "#",
+      "image": "img/page/movie-categories/horor.jpg",
+      "name": "Горрор"
+   },
+   {
+      "id": 6,
+      "link": "#",
+      "image": "img/page/movie-categories/fantasy.webp",
+      "name": "Фентезі"
+   }
+]

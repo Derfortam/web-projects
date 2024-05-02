@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+
+
+@font-face {
+    font-family: "Causten";
+    src: url("../fonts/causten/Causten-Bold.woff2") format("woff2"),
+        url("../fonts/causten/Causten-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Causten";
+    src: url("../fonts/causten/Causten-Semi-Bold.woff2") format("woff2"),
+        url("../fonts/causten/Causten-Semi-Bold.woff") format("woff");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Causten";
+    src: url("../fonts/causten/Causten-Medium.woff2") format("woff2"),
+        url("../fonts/causten/Causten-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Causten";
+    src: url("../fonts/causten/Causten-Regular.woff2") format("woff2"),
+        url("../fonts/causten/Causten-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+
+
+@font-face {
+    font-family: "Core Sans C";
+    src: url("../fonts/core_sans/CoreSansC-55Medium.woff2") format("woff2"),
+        url("../fonts/core_sans/CoreSansC-55Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Core Sans C";
+    src: url("../fonts/core_sans/CoreSansC-65Bold.woff2") format("woff2"),
+        url("../fonts/core_sans/CoreSansC-65Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Core Sans C";
+    src: url("../fonts/core_sans/CoreSansC-85Heavy.woff2") format("woff2"),
+        url("../fonts/core_sans/CoreSansC-85Heavy.woff") format("woff");
+    font-weight: 800;
+}
+
+
+
+
+
+
+/* Causten 500 700 600 400 */
+/* Core Sans 65  500 600  700 800 */
+/* Montserrat 800 */
+
+/*
+Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або 
+значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black
+*/

@@ -1,0 +1,51 @@
+[
+   {
+      "id": 1,
+      "link": "#",
+      "image": "img/page/book-catalog/books/novels.webp",
+      "name": "Романи",
+      "data": "novels"
+   },
+   {
+      "id": 2,
+      "link": "genres.html",
+      "image": "img/page/book-catalog/books/sciense-fiction.jpg",
+      "name": "Фантастика",
+      "data": "fiction"
+   },
+   {
+      "id": 3,
+      "link": "#",
+      "image": "img/page/book-catalog/books/science.png",
+      "name": "Наукова література",
+      "data": "science"
+   },
+   {
+      "id": 4,
+      "link": "#",
+      "image": "img/page/book-catalog/books/detective.webp",
+      "name": "Детектив",
+      "data": "detective"
+   },
+   {
+      "id": 5,
+      "link": "#",
+      "image": "img/page/book-catalog/books/horor.jpg",
+      "name": "Горрор",
+      "data": "horror"
+   },
+   {
+      "id": 6,
+      "link": "genres.html",
+      "image": "img/page/book-catalog/books/fantasy.webp",
+      "name": "Фентезі",
+      "data": "fantasy"
+   },
+   {
+      "id": 7,
+      "link": "#",
+      "image": "img/page/book-catalog/books/selfhelp.jpg",
+      "name": "Саморозвиток",
+      "data": "self"
+   }
+]

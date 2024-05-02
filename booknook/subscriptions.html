@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- zxx -->
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+   <title>Subscriptions</title>
+</head>
+
+<body>
+   <div class="wrapper">
+
+      <!-- preloader -->
+      <!-- <div id="preloader">
+         <div class="spinner"></div>
+      </div> -->
+      <!-- ------------ -->
+      <header class="header header--fixed">
+         <div class="header__container">
+            <img src="img/header/book-nook.svg" alt="logo" class="header__logo">
+            <div class="header__navigation">
+               <nav class="header__menu menu">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a href="index.html" class="menu__link menu__link">Головна</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="book-catalog.html" class="menu__link">Книги</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="support.html" class="menu__link">Підтримка</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--active">Підписки</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="header__action">
+               <a href="#" class="header__link-action _i-search"></a>
+               <a href="#" class="header__link-action _i-ring"></a>
+            </div>
+            <div class="header__burger-block">
+               <div class="header__burger">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="page page--padding">
+         <div class="page__container">
+            <div class="page__payment-features payment-features payment-features--margin">
+               <section class="payment-features__payment payment payment--margin">
+                  <div class="payment__container">
+                     <div class="titling titling--margin">
+                        <div class="titling__area">
+                           <h2 class="titling__title">Обирайте тарифний план, який підходить саме вам</h2>
+                           <div class="titling__text">
+                              <p>Приєднуйтесь до Booknook та обирайте один з наших гнучких варіантів підписки, що
+                                 відповідають
+                                 вашим уподобанням. Приготуйтеся до безперервних розваг!</p>
+                           </div>
+                        </div>
+                        <div class="payment__choose-buttons choose-buttons">
+                           <div data-tab="month" class="payment__button choose-buttons__button active">
+                              Місячний
+                           </div>
+                           <div data-tab="year" class="payment__button choose-buttons__button ">Річний
+                           </div>
+                        </div>
+                     </div>
+                     <div data-main id="month" class="payment__tabcontent">
+                        <div class="payment-plan payment__payment-plan payment__payment-plan--margin">
+                           <article class="payment-plan__block">
+                              <h4 class="payment-plan__title">Базовий план</h4>
+                              <div class="payment-plan__text">
+                                 <p>Насолоджуйтесь великою бібліотекою книг з різноманітним контентом,
+                                    включаючи
+                                    нещодавно випущені новинки</p>
+                              </div>
+                              <div class="payment-plan__price">
+                                 <h5 class="payment-plan__cost">₴9.99</h5>
+                                 <span class="payment-plan__per-time">/місяць</span>
+                              </div>
+                              <div class="payment-plan__buttons">
+                                 <a href="#" class="deactive-button">
+                                    Пробний Період
+                                 </a>
+                                 <a href="#" class="button">
+                                    Обрати План
+                                 </a>
+                              </div>
+                           </article>
+                           <article class="payment-plan__block">
+                              <h4 class="payment-plan__title">Стандартний план</h4>
+                              <div class="payment-plan__text">
+                                 <p>
+                                    Отримайте доступ до більшої кількості книг, включаючий новинки та ексклюзивний
+                                    контент</p>
+                              </div>
+                              <div class="payment-plan__price">
+                                 <h5 class="payment-plan__cost">₴12.99</h5>
+                                 <span class="payment-plan__per-time">/місяць</span>
+                              </div>
+                              <div class="payment-plan__buttons">
+                                 <a href="#" class="deactive-button">
+                                    Пробний Період
+                                 </a>
+                                 <a href="#" class="button">
+                                    Обрати План
+                                 </a>
+                              </div>
+                           </article>
+                           <article class="payment-plan__block">
+                              <h4 class="payment-plan__title">Преміум план</h4>
+                              <div class="payment-plan__text">
+                                 <p>Доступ до найширшого вибору книг,
+                                    включаючи всі нові релізи та можливість завантажувати 1 книгу на місяць</p>
+                              </div>
+                              <div class="payment-plan__price">
+                                 <h5 class="payment-plan__cost">₴14.99</h5>
+                                 <span class="payment-plan__per-time">/місяць</span>
+                              </div>
+                              <div class="payment-plan__buttons">
+                                 <a href="#" class="deactive-button">
+                                    Пробний Період
+                                 </a>
+                                 <a href="#" class="button">
+                                    Обрати План
+                                 </a>
+                              </div>
+                           </article>
+                        </div>
+                        <div class="payment-features__block">
+                           <div class="payment-features__titling payment-features__titling--margin">
+                              <h2 class="payment-features__title">Знайдіть ваш тариф</h2>
+                              <div class="payment-features__text">
+                                 <p>Booknook пропонує три різні тарифні плани, які відповідають вашим потребам: Базовий,
+                                    Стандартний
+                                    та Преміум. Порівняйте можливості кожного з них та оберіть той, що підходить саме
+                                    вам.</p>
+                              </div>
+                           </div>
+                           <table class="payment-features__table">
+                              <thead class="payment-features__head">
+                                 <tr class="payment-features__row">
+                                    <th>Особливості</th>
+                                    <th>Базовий</th>
+                                    <th>Стандартний <span class="payment-features__label">Popular</span></th>
+                                    <th>Преміум</th>
+                                 </tr>
+                              </thead>
+                              <tbody class="payment-features__body">
+                                 <tr class="payment-features__row">
+                                    <td>Ціна</td>
+                                    <td>₴9.99</td>
+                                    <td>₴12.99</td>
+                                    <td>₴14.99</td>
+                                 </tr>
+                                 <tr class="payment-features__row">
+                                    <td>Зміст</td>
+                                    <td>Насолоджуйтесь великою бібліотекою книг з різноманітним контентом,
+                                       включаючи
+                                       нещодавно випущені новинки</td>
+                                    <td>Отримайте доступ до більшої кількості книг, включаючий новинки та ексклюзивний
+                                       контент</td>
+                                    <td>Доступ до найширшого вибору книг,
+                                       включаючи всі нові релізи та можливість завантажувати 1 книгу на місяць</td>
+                                 </tr>
+                                 <tr class="payment-features__row">
+                                    <td>Пробна версія</td>
+                                    <td>7 днів</td>
+                                    <td>7 днів</td>
+                                    <td>7 днів</td>
+                                 </tr>
+                                 <tr class="payment-features__row">
+                                    <td>Можна скасувати будь-коли</td>
+                                    <td>Так</td>
+                                    <td>Так</td>
+                                    <td>Так</td>
+                                 </tr>
+                                 <tr class="payment-features__row">
+                                    <td>Можливість завантаження</td>
+                                    <td>Ні</td>
+                                    <td>Ні</td>
+                                    <td>Так</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div id="year" class="payment__tabcontent">
+                        <div class="payment__payment-plan payment-plan payment__payment-plan--margin">
+                           <article class="payment-plan__block">
+                              <h4 class="payment-plan__title">Базовий план</h4>
+                              <div class="payment-plan__text">
+                                 <p>Насолоджуйтесь великою бібліотекою книг з різноманітним контентом,
+                                    включаючи
+                                    нещодавно випущені новинки</p>
+                              </div>
+                              <div class="payment-plan__price">
+                                 <h5 class="payment-plan__cost">₴90.99</h5>
+                                 <span class="payment-plan__per-time">/рік</span>
+                              </div>
+                              <div class="payment-plan__buttons">
+                                 <a href="#" class="deactive-button">
+                                    Пробний Період
+                                 </a>
+                                 <a href="#" class="button">
+                                    Обрати План
+                                 </a>
+                              </div>
+                           </article>
+                           <article class="payment-plan__block">
+                              <h4 class="payment-plan__title">Стандартний план</h4>
+                              <div class="payment-plan__text">
+                                 <p>
+                                    Отримайте доступ до більшої кількості книг, включаючий новинки та ексклюзивний
+                                    контент</p>
+                              </div>
+                              <div class="payment-plan__price">
+                                 <h5 class="payment-plan__cost">₴120.99</h5>
+                                 <span class="payment-plan__per-time">/рік</span>
+                              </div>
+                              <div class="payment-plan__buttons">
+                                 <a href="#" class="deactive-button">
+                                    Пробний Період
+                                 </a>
+                                 <a href="#" class="button">
+                                    Обрати План
+                                 </a>
+                              </div>
+                           </article>
+                           <article class="payment-plan__block">
+                              <h4 class="payment-plan__title">Преміум план</h4>
+                              <div class="payment-plan__text">
+                                 <p>Доступ до найширшого вибору книг,
+                                    включаючи всі нові релізи та можливість завантажувати 1 книгу на місяць</p>
+                              </div>
+                              <div class="payment-plan__price">
+                                 <h5 class="payment-plan__cost">₴140.99</h5>
+                                 <span class="payment-plan__per-time">/рік</span>
+                              </div>
+                              <div class="payment-plan__buttons">
+                                 <a href="#" class="deactive-button">
+                                    Пробний Період
+                                 </a>
+                                 <a href="#" class="button">
+                                    Обрати План
+                                 </a>
+                              </div>
+                           </article>
+                        </div>
+                        <div class="payment-features__block">
+                           <div class="payment-features__titling payment-features__titling--margin">
+                              <h2 class="payment-features__title">Знайдіть ваш тариф</h2>
+                              <div class="payment-features__text">
+                                 <p>Booknook пропонує три різні тарифні плани, які відповідають вашим потребам: Базовий,
+                                    Стандартний
+                                    та Преміум. Порівняйте можливості кожного з них та оберіть той, що підходить саме
+                                    вам.</p>
+                              </div>
+                           </div>
+                           <table class="payment-features__table">
+                              <thead class="payment-features__head">
+                                 <tr class="payment-features__row">
+                                    <th>Особливості</th>
+                                    <th>Базовий</th>
+                                    <th>Стандартний <span class="payment-features__label">Popular</span></th>
+                                    <th>Преміум</th>
+                                 </tr>
+                              </thead>
+                              <tbody class="payment-features__body">
+                                 <tr class="payment-features__row">
+                                    <td>Ціна</td>
+                                    <td>₴90.99</td>
+                                    <td>₴120.99</td>
+                                    <td>₴140.99</td>
+                                 </tr>
+                                 <tr class="payment-features__row">
+                                    <td>Зміст</td>
+                                    <td>Насолоджуйтесь великою бібліотекою книг з різноманітним контентом,
+                                       включаючи
+                                       нещодавно випущені новинки</td>
+                                    <td>Отримайте доступ до більшої кількості книг, включаючий новинки та ексклюзивний
+                                       контент</td>
+                                    <td>Доступ до найширшого вибору книг,
+                                       включаючи всі нові релізи та можливість завантажувати 1 книгу на місяць</td>
+                                 </tr>
+                                 <tr class="payment-features__row">
+                                    <td>Пробна версія</td>
+                                    <td>7 днів</td>
+                                    <td>7 днів</td>
+                                    <td>7 днів</td>
+                                 </tr>
+                                 <tr class="payment-features__row">
+                                    <td>Можна скасувати будь-коли</td>
+                                    <td>Так</td>
+                                    <td>Так</td>
+                                    <td>Так</td>
+                                 </tr>
+                                 <tr class="payment-features__row">
+                                    <td>Можливість завантаження</td>
+                                    <td>Ні</td>
+                                    <td>Ні</td>
+                                    <td>Так</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <section class="page__trial trial trial--margin">
+               <div class="trial__container">
+                  <img src="img/page/trial/books.jpg" alt="image" class="trial__image">
+                  <div class="titling">
+                     <div class="titling__area">
+                        <h2 class="titling__title">Почніть безкоштовну пробну версію вже сьогодні!</h2>
+                        <div class="titling__text">
+                           <p>Це чіткий і лаконічний заклик до дії, який заохочує користувачів підписатися на
+                              безкоштовну
+                              пробну версію Booknook.</p>
+                        </div>
+                     </div>
+                     <a href="#" class="button">
+                        Почніть зараз
+                     </a>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__body">
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Головна</h4>
+                  <ul class="footer-menu-block__list">
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Категорії</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Ціни</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Зворотній зв'язок</a>
+                     </li>
+                  </ul>
+               </article>
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Книги</h4>
+                  <ul class="footer-menu-block__list">
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Жанри</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Тренди</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Нові релізи</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Популярне</a>
+                     </li>
+                  </ul>
+               </article>
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Підтримка</h4>
+                  <ul class="footer-menu-block__list">
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Напишіть нам</a>
+                     </li>
+                  </ul>
+               </article>
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Підписки</h4>
+                  <ul class="footer-menu-block__list">
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Плани</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Можливості</a>
+                     </li>
+                  </ul>
+               </article>
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Зв'яжіться з нами</h4>
+                  <div class="footer-menu-block__social">
+                     <a href="#" class="footer-menu-block__link-social _i-facebook"></a>
+                     <a href="#" class="footer-menu-block__link-social _i-twitter"></a>
+                     <a href="#" class="footer-menu-block__link-social _i-linkedin"></a>
+                  </div>
+               </article>
+            </div>
+            <div class="footer__bottom bottom-footer">
+               <div class="bottom-footer__sign">@2024 booknook, All Rights Reserved</div>
+               <div class="bottom-footer__other">
+                  <a href="#">Terms of Use</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Cookie Policy</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

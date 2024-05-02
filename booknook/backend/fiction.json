@@ -1,0 +1,44 @@
+[
+   {
+      "id": 1,
+      "link": "#",
+      "image": "img/page/all-books/fiction/1984.jpg",
+      "pages": "253",
+      "name": "1984"
+   },
+   {
+      "id": 2,
+      "link": "#",
+      "image": "img/page/all-books/fiction/hunger-games.jpg",
+      "pages": "550",
+      "name": "Голодні ігри"
+   },
+   {
+      "id": 3,
+      "link": "#",
+      "image": "img/page/all-books/fiction/451.jpg",
+      "pages": "290",
+      "name": "451 градус за Фаренгейтом"
+   },
+   {
+      "id": 4,
+      "link": "book.html",
+      "image": "img/page/all-books/fiction/dune.jpeg",
+      "pages": "633",
+      "name": "Дюна"
+   },
+   {
+      "id": 5,
+      "link": "#",
+      "image": "img/page/all-books/web/article1.webp",
+      "pages": "23",
+      "name": "Інноваційні підходи до розробки мультимедійних веб-додатків"
+   },
+   {
+      "id": 6,
+      "link": "#",
+      "image": "img/page/all-books/fantasy/narnia.webp",
+      "pages": "360",
+      "name": "Хроніки Нарнії"
+   }
+]

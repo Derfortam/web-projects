@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- zxx -->
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+   <title>Home Page</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <!-- preloader -->
+      <!-- <div id="preloader">
+         <div class="spinner"></div>
+      </div> -->
+      <!-- ------------ -->
+      <header class="header header--fixed">
+         <div class="header__container">
+            <img src="img/header/book-nook.svg" alt="logo" class="header__logo">
+            <div class="header__navigation">
+               <nav class="header__menu menu">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--active">Головна</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="book-catalog.html" class="menu__link">Книги</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="support.html" class="menu__link">Підтримка</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="subscriptions.html" class="menu__link">Підписки</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="header__action">
+               <a href="#" class="header__link-action _i-search"></a>
+               <a href="#" class="header__link-action _i-ring"></a>
+            </div>
+            <div class="header__burger-block">
+               <div class="header__burger">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="page">
+         <section class="page__hero hero hero--margin">
+            <div class="hero__background">
+               <img src="img/page/hero/kniga.jpg" alt="back-image" class="hero__image">
+               <div class="hero__text-decoration">
+                  Lorem ipsum dolor sit adolore asperiores quas
+                  dolorum magni sit omnis!
+               </div>
+            </div>
+            <div class="hero__container">
+               <div class="hero__body">
+                  <div class="hero__content">
+                     <h1 class="hero__title">Найкращий книжковий досвід</h1>
+                     <div class="hero__text">
+                        <p>
+                           Booknook - це найкращий сервіс для читання вашої улюбленої літератури, статей та наукових
+                           праць, будь-де
+                           і будь-коли. За допомогою BookHub ви можете насолоджуватися найрізноманітнішим контентом,
+                           дізнавайтесь новитки та навчайтесь
+                           включаючи найновіші бестселери, класичні книги, цікаві статті та багато іншого. Ви також
+                           можете створювати власні списки для зручного перегляду та знаходження контенту, який бажаєте
+                           прочитати
+                        </p>
+                     </div>
+                     <a href="book-catalog.html" class="button">
+                        <span class="_i-read"></span>
+                        Почни зараз
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="homePageCategories" class="page__categories categories categories--margin">
+            <div class="categories__container">
+               <div id="homePageCategoriesOldPlace" class="titling titling--margin">
+                  <div class="titling__area">
+                     <h2 class="titling__title">Ознайомтеся з нашим широким розмаїттям категорій</h2>
+                     <div class="titling__text">
+                        <p>
+                           Якщо ви шукаєте комедію, щоб посміятися, драму, щоб замислитися, або наукову літературу, щоб
+                           дізнатися щось нове
+                        </p>
+                     </div>
+                  </div>
+                  <div id="homePageCategoryNavigation" class="swiper-navigation">
+                     <div id="homePagePrev" class="swiper-navigation__arrow prev _i-slide-left"></div>
+                     <div class="swiper-navigation__pagination">
+                        <div id="homePageCategoriesLines" class="swiper-navigation__lines"></div>
+                     </div>
+                     <div id="homePageNext" class="swiper-navigation__arrow next _i-slide-right"></div>
+                  </div>
+               </div>
+               <div id="homePageCategoriesNewPlace" class="categories__body-slider">
+                  <div id="homePageCategoriesSwiper" class="swiper categories__slider">
+                     <div id="categoriesWrapper" class="swiper-wrapper categories__wrapper">
+                        <!-- <div class="swiper-slide categories__slide">
+                           <a href="#" class="categories__body">
+                              <div class="categories__images">
+                                 <img src="img/page/movie-categories/novels.webp" alt="image" class="categories__img">
+                              </div>
+                              <div class="categories__info">
+                                 <h5 class="categories__name">Novels</h5>
+                                 <div class="categories__link _i-slide-right"></div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide categories__slide">
+                           <a href="genres.html" class="categories__body">
+                              <div class="categories__images">
+                                 <img src="img/page/movie-categories/sciense-fiction.jpg" alt="image"
+                                    class="categories__img" />
+                              </div>
+                              <div class="categories__info">
+                                 <h5 class="categories__name">Fiction</h5>
+                                 <div class="categories__link _i-slide-right"></div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide categories__slide">
+                           <a href="#" class="categories__body">
+                              <div class="categories__images">
+                                 <img src="img/page/movie-categories/science.png" alt="image" class="categories__img">
+                              </div>
+                              <div class="categories__info">
+                                 <h5 class="categories__name">Science</h5>
+                                 <div class="categories__link _i-slide-right"></div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide categories__slide">
+                           <a href="#" class="categories__body">
+                              <div class="categories__images">
+                                 <img src="img/page/movie-categories/detective.webp" alt="image"
+                                    class="categories__img">
+                              </div>
+                              <div class="categories__info">
+                                 <h5 class="categories__name">Detective</h5>
+                                 <div class="categories__link _i-slide-right"></div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide categories__slide">
+                           <a href="#" class="categories__body">
+                              <div class="categories__images">
+                                 <img src="img/page/movie-categories/horor.jpg" alt="image" class="categories__img" />
+                              </div>
+                              <div class="categories__info">
+                                 <h5 class="categories__name">Horror</h5>
+                                 <div class="categories__link _i-slide-right"></div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide categories__slide">
+                           <a href="#" class="categories__body">
+                              <div class="categories__images">
+                                 <img src="img/page/movie-categories/fantasy.webp" alt="image" class="categories__img">
+                              </div>
+                              <div class="categories__info">
+                                 <h5 class="categories__name">Fantasy</h5>
+                                 <div class="categories__link _i-slide-right"></div>
+                              </div>
+                           </a>
+                        </div> -->
+                     </div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+         <div class="page__frequently frequently frequently--margin">
+            <div class="frequently__container">
+               <div class="titling titling--margin">
+                  <div class="titling__area">
+                     <h2 class="titling__title">Поширені запитання</h2>
+                     <div class="titling__text">
+                        <p>Є питання? У нас є відповіді! Перегляньте наш розділ поширених запитань, щоб знайти відповіді
+                           на найбільш
+                           поширені
+                           питання про Booknook.</p>
+                     </div>
+                  </div>
+                  <a href="support.html" class="button">
+                     Запитати
+                  </a>
+               </div>
+               <div class="frequently__answers">
+                  <ul class="frequently__list">
+                     <li class="frequently__item open">
+                        <div class="frequently__number">01</div>
+                        <div class="frequently__content">
+                           <h4 class="frequently__title">Що таке Booknook?</h4>
+                           <div class="frequently__text">
+                              <p>Booknook - сервіс надання послуг для читання будь-яких книг та наукової літератури
+                                 університету
+                              </p>
+                           </div>
+                        </div>
+                        <div class="frequently__spoiller"></div>
+                     </li>
+                     <li class="frequently__item open">
+                        <div class="frequently__number">02</div>
+                        <div class="frequently__content">
+                           <h4 class="frequently__title">Що таке Booknook?</h4>
+                           <div class="frequently__text">
+                              <p>Booknook - сервіс надання послуг для читання будь-яких книг та наукової літератури
+                                 університету
+                              </p>
+                           </div>
+                        </div>
+                        <div class="frequently__spoiller"></div>
+                     </li>
+
+                     <li class="frequently__item">
+                        <div class="frequently__number">03</div>
+                        <div class="frequently__content">
+                           <h4 class="frequently__title">Що таке Booknook?</h4>
+                           <div class="frequently__text">
+                              <p>Booknook - сервіс надання послуг для читання будь-яких книг та наукової літератури
+                                 університету
+                              </p>
+                           </div>
+                        </div>
+                        <div class="frequently__spoiller"></div>
+                     </li>
+                     <li class="frequently__item">
+                        <div class="frequently__number">04</div>
+                        <div class="frequently__content">
+                           <h4 class="frequently__title">Що таке Booknook?</h4>
+                           <div class="frequently__text">
+                              <p>Booknook - сервіс надання послуг для читання будь-яких книг та наукової літератури
+                                 університету
+                              </p>
+                           </div>
+                        </div>
+                        <div class="frequently__spoiller"></div>
+                     </li>
+                  </ul>
+                  <ul class="frequently__list">
+                     <li class="frequently__item open">
+                        <div class="frequently__number">05</div>
+                        <div class="frequently__content">
+                           <h4 class="frequently__title">Чи усі книги на Booknook безкоштовні?</h4>
+                           <div class="frequently__text">
+                              <p>Ні, більшість книг можна прочитати після придбання місячної чи річної підписки. Проте
+                                 наукова література університету завжди буде доступна безкоштовно. <a
+                                    href="subscriptions.html" class="frequently__link">Більше
+                                    тут...</a>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="frequently__spoiller"></div>
+                     </li>
+                     <li class="frequently__item open">
+                        <div class="frequently__number">06</div>
+                        <div class="frequently__content">
+                           <h4 class="frequently__title">Чи усі книги на Booknook безкоштовні?</h4>
+                           <div class="frequently__text">
+                              <p>Ні, більшість книг можна прочитати після придбання місячної чи річної підписки. Проте
+                                 наукова література університету завжди буде доступна безкоштовно. <a
+                                    href="subscriptions.html" class="frequently__link">Більше
+                                    тут...</a>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="frequently__spoiller"></div>
+                     </li>
+                     <li class="frequently__item">
+                        <div class="frequently__number">07</div>
+                        <div class="frequently__content">
+                           <h4 class="frequently__title">Чи усі книги на Booknook безкоштовні?</h4>
+                           <div class="frequently__text">
+                              <p>Ні, більшість книг можна прочитати після придбання місячної чи річної підписки. Проте
+                                 наукова література університету завжди буде доступна безкоштовно. <a href="#"
+                                    class="frequently__link">Більше
+                                    тут...</a>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="frequently__spoiller"></div>
+                     </li>
+                     <li class="frequently__item">
+                        <div class="frequently__number">08</div>
+                        <div class="frequently__content">
+                           <h4 class="frequently__title">Чи усі книги на Booknook безкоштовні?</h4>
+                           <div class="frequently__text">
+                              <p>Ні, більшість книг можна прочитати після придбання місячної чи річної підписки. Проте
+                                 наукова література університету завжди буде доступна безкоштовно. <a href="#"
+                                    class="frequently__link">Більше
+                                    тут...</a>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="frequently__spoiller"></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <section class="payment payment--margin">
+            <div class="payment__container">
+               <div class="titling titling--margin">
+                  <div class="titling__area">
+                     <h2 class="titling__title">Обирайте тарифний план, який підходить саме вам</h2>
+                     <div class="titling__text">
+                        <p>Приєднуйтесь до Booknook та обирайте один з наших гнучких варіантів підписки, що відповідають
+                           вашим уподобанням. Приготуйтеся до безперервних розваг!</p>
+                     </div>
+                  </div>
+                  <div class="payment__choose-buttons choose-buttons">
+                     <div data-tab="month" class="payment__button choose-buttons__button active">
+                        Місячний
+                     </div>
+                     <div data-tab="year" class="payment__button choose-buttons__button ">Річний
+                     </div>
+                  </div>
+               </div>
+               <div data-main id="month" class="payment__tabcontent">
+                  <div class="payment-plan">
+                     <article class="payment-plan__block">
+                        <h4 class="payment-plan__title">Базовий план</h4>
+                        <div class="payment-plan__text">
+                           <p>Насолоджуйтесь великою бібліотекою книг з різноманітним контентом,
+                              включаючи
+                              нещодавно випущені новинки</p>
+                        </div>
+                        <div class="payment-plan__price">
+                           <h5 class="payment-plan__cost">₴9.99</h5>
+                           <span class="payment-plan__per-time">/місяць</span>
+                        </div>
+                        <div class="payment-plan__buttons">
+                           <a href="subscriptions.html" class="deactive-button">
+                              Пробний Період
+                           </a>
+                           <a href="subscriptions.html" class="button">
+                              Обрати План
+                           </a>
+                        </div>
+                     </article>
+                     <article class="payment-plan__block">
+                        <h4 class="payment-plan__title">Стандартний план</h4>
+                        <div class="payment-plan__text">
+                           <p>
+                              Отримайте доступ до більшої кількості книг, включаючий новинки та ексклюзивний
+                              контент</p>
+                        </div>
+                        <div class="payment-plan__price">
+                           <h5 class="payment-plan__cost">₴12.99</h5>
+                           <span class="payment-plan__per-time">/місяць</span>
+                        </div>
+                        <div class="payment-plan__buttons">
+                           <a href="subscriptions.html" class="deactive-button">
+                              Пробний Період
+                           </a>
+                           <a href="subscriptions.html" class="button">
+                              Обрати План
+                           </a>
+                        </div>
+                     </article>
+                     <article class="payment-plan__block">
+                        <h4 class="payment-plan__title">Преміум план</h4>
+                        <div class="payment-plan__text">
+                           <p>Доступ до найширшого вибору книг,
+                              включаючи всі нові релізи та можливість завантажувати 1 книгу на місяць</p>
+                        </div>
+                        <div class="payment-plan__price">
+                           <h5 class="payment-plan__cost">₴14.99</h5>
+                           <span class="payment-plan__per-time">/місяць</span>
+                        </div>
+                        <div class="payment-plan__buttons">
+                           <a href="subscriptions.html" class="deactive-button">
+                              Пробний Період
+                           </a>
+                           <a href="subscriptions.html" class="button">
+                              Обрати План
+                           </a>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+               <div id="year" class="payment__tabcontent">
+                  <div class="payment-plan">
+                     <article class="payment-plan__block">
+                        <h4 class="payment-plan__title">Базовий план</h4>
+                        <div class="payment-plan__text">
+                           <p>Насолоджуйтесь великою бібліотекою книг з різноманітним контентом,
+                              включаючи
+                              нещодавно випущені новинки</p>
+                        </div>
+                        <div class="payment-plan__price">
+                           <h5 class="payment-plan__cost">₴90.99</h5>
+                           <span class="payment-plan__per-time">/рік</span>
+                        </div>
+                        <div class="payment-plan__buttons">
+                           <a href="subscriptions.html" class="deactive-button">
+                              Пробний Період
+                           </a>
+                           <a href="subscriptions.html" class="button">
+                              Обрати План
+                           </a>
+                        </div>
+                     </article>
+                     <article class="payment-plan__block">
+                        <h4 class="payment-plan__title">Стандартний план</h4>
+                        <div class="payment-plan__text">
+                           <p>
+                              Отримайте доступ до більшої кількості книг, включаючий новинки та ексклюзивний
+                              контент</p>
+                        </div>
+                        <div class="payment-plan__price">
+                           <h5 class="payment-plan__cost">₴120.99</h5>
+                           <span class="payment-plan__per-time">/рік</span>
+                        </div>
+                        <div class="payment-plan__buttons">
+                           <a href="subscriptions.html" class="deactive-button">
+                              Пробний Період
+                           </a>
+                           <a href="subscriptions.html" class="button">
+                              Обрати План
+                           </a>
+                        </div>
+                     </article>
+                     <article class="payment-plan__block">
+                        <h4 class="payment-plan__title">Преміум план</h4>
+                        <div class="payment-plan__text">
+                           <p>Доступ до найширшого вибору книг,
+                              включаючи всі нові релізи та можливість завантажувати 1 книгу на місяць</p>
+                        </div>
+                        <div class="payment-plan__price">
+                           <h5 class="payment-plan__cost">₴140.99</h5>
+                           <span class="payment-plan__per-time">/рік</span>
+                        </div>
+                        <div class="payment-plan__buttons">
+                           <a href="subscriptions.html" class="deactive-button">
+                              Пробний Період
+                           </a>
+                           <a href="subscriptions.html" class="button">
+                              Обрати План
+                           </a>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="page__trial trial trial--margin">
+            <div class="trial__container">
+               <img src="img/page/trial/books.jpg" alt="image" class="trial__image">
+               <div class="titling">
+                  <div class="titling__area">
+                     <h2 class="titling__title">Почніть безкоштовну пробну версію вже сьогодні!</h2>
+                     <div class="titling__text">
+                        <p>Це чіткий і лаконічний заклик до дії, який заохочує користувачів підписатися на безкоштовну
+                           пробну версію Booknook.</p>
+                     </div>
+                  </div>
+                  <a href="subscriptions.html" class="button">
+                     Почніть зараз
+                  </a>
+               </div>
+
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__body">
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Головна</h4>
+                  <ul class="footer-menu-block__list">
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Категорії</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Ціни</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Зворотній зв'язок</a>
+                     </li>
+                  </ul>
+               </article>
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Книги</h4>
+                  <ul class="footer-menu-block__list">
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Жанри</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Тренди</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Нові релізи</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Популярне</a>
+                     </li>
+                  </ul>
+               </article>
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Підтримка</h4>
+                  <ul class="footer-menu-block__list">
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Напишіть нам</a>
+                     </li>
+                  </ul>
+               </article>
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Підписки</h4>
+                  <ul class="footer-menu-block__list">
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Плани</a>
+                     </li>
+                     <li class="footer-menu-block__item">
+                        <a href="#" class="footer-menu-block__link">Можливості</a>
+                     </li>
+                  </ul>
+               </article>
+               <article class="footer__block-menu footer-menu-block">
+                  <h4 class="footer-menu-block__title">Зв'яжіться з нами</h4>
+                  <div class="footer-menu-block__social">
+                     <a href="#" class="footer-menu-block__link-social _i-facebook"></a>
+                     <a href="#" class="footer-menu-block__link-social _i-twitter"></a>
+                     <a href="#" class="footer-menu-block__link-social _i-linkedin"></a>
+                  </div>
+               </article>
+            </div>
+            <div class="footer__bottom bottom-footer">
+               <div class="bottom-footer__sign">@2024 booknook, All Rights Reserved</div>
+               <div class="bottom-footer__other">
+                  <a href="#">Terms of Use</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Cookie Policy</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

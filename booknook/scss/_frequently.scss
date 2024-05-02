@@ -1,0 +1,175 @@
+.frequently {
+   visibility: hidden;
+   opacity: 0;
+   transform: translateY(50%);
+   transition: opacity 1.5s, visibility 1.5s, transform 0.5s;
+   &.show {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0%);
+   }
+   &--margin {
+      margin-bottom: toRem(150);
+      @media (max-width: toEm(900)) {
+         margin-bottom: toRem(100);
+      }
+      @media (max-width: toEm(600)) {
+         margin-bottom: toRem(80);
+      }
+   }
+   color: $grey60;
+   font-size: toRem(18);
+   font-weight: 500;
+   @media (max-width: toEm(900)) {
+      font-size: toRem(16);
+   }
+
+   &__answers {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      @media (max-width: toEm(800)) {
+         flex-direction: column;
+      }
+   }
+
+   &__list {
+      flex-basis: 47.5%;
+      @media (max-width: toEm(900)) {
+         flex-basis: 100%;
+         width: 100%;
+         position: relative;
+         &:not(:last-child) {
+            &::before {
+               content: "";
+               position: absolute;
+               width: 100%;
+               height: 2px;
+               bottom: 0;
+               left: 0;
+               background: linear-gradient(50deg, rgba(254, 194, 1, 0) 0%, rgba(254, 194, 1, 1) 33%, rgba(254, 194, 1, 0) 100%);
+            }
+         }
+      }
+   }
+
+   &__item {
+      display: flex;
+      width: 100%;
+      gap: toRem(20);
+      align-items: center;
+      &.open {
+         align-items: flex-start;
+      }
+      padding: toEm(34, 18);
+      position: relative;
+      &:not(:last-child) {
+         &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(50deg, rgba(254, 194, 1, 0) 0%, rgba(254, 194, 1, 1) 33%, rgba(254, 194, 1, 0) 100%);
+         }
+      }
+      @media (max-width: toEm(500)) {
+         padding: toEm(18, 18);
+      }
+   }
+
+   &__number {
+      background-color: $black12;
+      color: $absoluteWhite;
+
+      border-radius: toRem(8);
+      font-size: toEm(20, 18);
+      padding: toEm(20, 18);
+      border: 1px solid $black15;
+
+      text-align: center;
+      @media (max-width: toEm(500)) {
+         font-size: toEm(14, 18);
+         padding: toEm(14, 18);
+      }
+   }
+
+   &__content {
+      flex-grow: 1;
+   }
+
+   &__title {
+      font-size: toRem(22);
+      color: $absoluteWhite;
+      @media (max-width: toEm(900)) {
+         font-size: toRem(18);
+      }
+   }
+
+   &__text {
+      opacity: 0;
+      transform: translateY(-50%);
+      transition: all 0.6s;
+      padding-top: toRem(20);
+      .open & {
+         opacity: 1;
+         transform: translateY(0%);
+      }
+      p {
+         line-height: 1.3;
+         &:not(:last-child) {
+            margin-bottom: toRem(10);
+         }
+      }
+   }
+
+   &__link {
+      color: #0099ff;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            text-decoration-color: inherit;
+         }
+      }
+   }
+
+   &__spoiller {
+      justify-self: flex-end;
+      width: toRem(20);
+      height: toRem(20);
+      color: $absoluteWhite;
+
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: toRem(20);
+         height: toRem(2.5);
+         background-color: $absoluteWhite;
+         border-radius: 2px;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         width: toRem(2.5);
+         height: toRem(20);
+         //  background-color: $absoluteWhite;
+         border-radius: 2px;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         background-color: $absoluteWhite;
+      }
+      .open & {
+         &::after {
+            background-color: transparent;
+         }
+      }
+   }
+}
