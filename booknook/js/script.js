@@ -531,7 +531,10 @@ fetch("https://derfortam.github.io/web-projects/booknook/backend/categories.json
 
 // =====================
 
+<<<<<<< HEAD
 // fetch("../backend/ourGenresBook.json")
+=======
+>>>>>>> 8635fe7ceb8e80284323756d36d4519cd197e857
 fetch("https://derfortam.github.io/web-projects/booknook/backend/ourGenresBook.json")
    .then(pesponce => pesponce.json())
    .then(json => {
