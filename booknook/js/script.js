@@ -483,7 +483,7 @@ if (spollers) {
 // ==========================
 //fetch categories swiper
 
-fetch("../backend/categories.json")
+fetch("https://derfortam.github.io/web-projects/booknook/backend/categories.json")
    .then(pesponce => pesponce.json())
    .then(json => {
       const categoriesWrapper = document.querySelector("#categoriesWrapper")
@@ -531,7 +531,8 @@ fetch("../backend/categories.json")
 
 // =====================
 
-fetch("../backend/ourGenresBook.json")
+// fetch("../backend/ourGenresBook.json")
+fetch("https://derfortam.github.io/web-projects/booknook/backend/ourGenresBook.json")
    .then(pesponce => pesponce.json())
    .then(json => {
       const ourGenresWrapper = document.querySelector("#ourGenresWrapper")
@@ -557,7 +558,7 @@ fetch("../backend/ourGenresBook.json")
       }
    })
 
-fetch("../backend/topGenresBook.json")
+fetch("https://derfortam.github.io/web-projects/booknook/backend/topGenresBook.json")
    .then(pesponce => pesponce.json())
    .then(json => {
       const pupularGenresBook = document.querySelector("#pupularGenresBook")

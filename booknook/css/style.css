@@ -1988,16 +1988,6 @@ body.menu-open {
 .book-section__tablinks.active {
   background-color: #1f1f1f;
 }
-.book-section__tabcontent {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.book-section__tabcontent.active {
-  visibility: visible;
-  opacity: 1;
-}
 @media (max-width: 87.5em) {
   .book-section__swiper-navigation {
     display: none;

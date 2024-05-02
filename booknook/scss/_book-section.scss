@@ -67,13 +67,13 @@
    }
 
    &__tabcontent {
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s;
-      &.active {
-         visibility: visible;
-         opacity: 1;
-      }
+      // // visibility: hidden;
+      // // opacity: 0;
+      // transition: all 0.3s;
+      // &.active {
+      //    visibility: visible;
+      //    opacity: 1;
+      // }
    }
 
    // ----------------------
