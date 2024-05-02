@@ -1,0 +1,44 @@
+[
+   {
+      "id": 1,
+      "link": "#",
+      "image": "img/page/book-catalog/books/history.webp",
+      "name": "Історичні"
+   },
+   {
+      "id": 2,
+      "link": "genres.html",
+      "image": "img/page/book-catalog/books/sciense-fiction.jpg",
+      "name": "Фантастика"
+   },
+   {
+      "id": 3,
+      "link": "#",
+      "image": "img/page/book-catalog/books/science.png",
+      "name": "Наукова література"
+   },
+   {
+      "id": 4,
+      "link": "#",
+      "image": "img/page/book-catalog/books/detective.webp",
+      "name": "Детектив"
+   },
+   {
+      "id": 5,
+      "link": "#",
+      "image": "img/page/book-catalog/books/horor.jpg",
+      "name": "Горрор"
+   },
+   {
+      "id": 6,
+      "link": "#",
+      "image": "img/page/book-catalog/books/fantasy.webp",
+      "name": "Фентезі"
+   },
+   {
+      "id": 7,
+      "link": "#",
+      "image": "img/page/book-catalog/books/selfhelp.jpg",
+      "name": "Саморозвиток"
+   }
+]

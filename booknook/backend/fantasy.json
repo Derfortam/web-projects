@@ -1,0 +1,23 @@
+[
+   {
+      "id": 1,
+      "link": "#",
+      "image": "img/page/all-books/fantasy/narnia.webp",
+      "pages": "360",
+      "name": "Хроніки Нарнії"
+   },
+   {
+      "id": 2,
+      "link": "#",
+      "image": "img/page/all-books/fantasy/lord.webp",
+      "pages": "360",
+      "name": "Володар Перстнів"
+   },
+   {
+      "id": 2,
+      "link": "#",
+      "image": "img/page/all-books/fantasy/vidmak.jpg",
+      "pages": "540",
+      "name": "Відьмак: Кров Ельфів"
+   }
+]
