@@ -1,0 +1,58 @@
+.managers {
+   &__container {
+   }
+
+   &__title {
+      text-transform: uppercase;
+      @media (max-width: toEm(600)) {
+         font-size: toRem(30);
+      }
+   }
+
+   &__list {
+      display: grid;
+      gap: toRem(50);
+      row-gap: toRem(15);
+      grid-template-columns: repeat(auto-fill, minmax(toRem(340), 1fr));
+      @media (max-width: toEm(400)) {
+         grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+      }
+   }
+
+   &__block {
+      background-color: $secondColor;
+      transition: transform 0.3s;
+      overflow: hidden;
+      @media (any-hover: hover) {
+         &:hover {
+            transform: scale(1.1);
+            .managers__profile {
+               transform: scale(1.1);
+            }
+         }
+      }
+   }
+
+   &__profile {
+      aspect-ratio: 269 / 246;
+      object-fit: cover;
+      width: 100%;
+      transition: transform 0.3s;
+   }
+
+   &__sub-title {
+      padding: toRem(15);
+      color: $secondAccentColor;
+      font-size: toRem(28);
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: toRem(3);
+      span {
+         color: $BGcolor;
+      }
+   }
+}

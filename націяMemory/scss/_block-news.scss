@@ -1,0 +1,132 @@
+.block-news {
+   &__section {
+      color: $mainColor;
+      padding: toRem(100) 0;
+      &:not(:last-child) {
+         border-bottom: 1px solid $mainColor;
+      }
+      @media (max-width: toEm(400)) {
+         padding: toRem(40) 0;
+      }
+      &:nth-child(even) {
+         .block-news__preview {
+            flex-direction: row-reverse;
+            @media (max-width: toEm(550)) {
+               flex-direction: column-reverse;
+            }
+         }
+      }
+      &:nth-child(odd) {
+         .block-news__preview {
+            @media (max-width: toEm(550)) {
+               flex-direction: column-reverse;
+            }
+         }
+      }
+   }
+
+   &__preview {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: toRem(20);
+
+      //   &--reverce {
+      //      flex-direction: row-reverse;
+      //   }
+      //   @media (max-width: toEm(500)) {
+      //      flex-direction: column;
+      //   }
+   }
+   &__photo {
+      max-width: toRem(656);
+
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: toRem(200);
+         height: toRem(5);
+         background-color: $mainColor;
+         right: 0;
+         top: 0;
+         @media (max-width: toEm(600)) {
+            width: toRem(100);
+         }
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         width: toRem(5);
+         height: toRem(100);
+         background-color: $mainColor;
+         right: 0;
+         top: 0;
+         @media (max-width: toEm(600)) {
+            height: toRem(50);
+         }
+      }
+   }
+
+   &__image {
+      aspect-ratio: 656 / 396;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: toRem(15);
+      padding-left: 0;
+   }
+
+   &__day {
+      display: flex;
+      align-items: center;
+      font-size: toRem(260);
+      font-weight: 700;
+      color: $dayNum;
+      text-transform: uppercase;
+      @media (max-width: toEm(1000)) {
+         font-size: toRem(160);
+      }
+      @media (max-width: toEm(600)) {
+         font-size: toRem(60);
+      }
+      span {
+         color: $secondAccentColor;
+         font-size: toRem(22);
+         display: block;
+         position: relative;
+         @media (max-width: toEm(600)) {
+            font-size: toRem(16);
+         }
+         &::before {
+            content: "";
+            width: toRem(100);
+            height: toRem(3);
+            background-color: $secondAccentColor;
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            margin-right: toRem(10);
+            transform: translateY(-50%);
+            @media (max-width: toEm(600)) {
+               width: toRem(30);
+               height: toRem(1);
+            }
+         }
+      }
+   }
+
+   &__text {
+      p {
+         font-size: toRem(22);
+         line-height: 1.5;
+         font-weight: 500;
+         &:not(:last-child) {
+            margin-bottom: toRem(10);
+         }
+         @media (max-width: toEm(600)) {
+            font-size: toRem(18);
+         }
+      }
+   }
+}

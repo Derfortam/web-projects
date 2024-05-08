@@ -1,0 +1,134 @@
+@use "sass:math";
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1652;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_functions.scss";
+@import "_icons.scss";
+
+.wrapper {
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+.wrapper main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: toRem(1682);
+   margin: 0 auto;
+   padding: 0 toRem(15);
+   width: 100%;
+}
+
+$mainFont: "Work Sans:", sans-serif;
+
+$mainColor: #ede8d5;
+$secondColor: #ffffff;
+$secondAccentColor: #fdde6a;
+$thirdAccentColor: #837c6a;
+
+$secondAccentColorHover: #ffca0a;
+
+$textColor: #e2ddca;
+$secondTextColor: #000000;
+$plashColor: #e2ddca;
+$BGcolor: #1b1613;
+$sectionSecondBG: #eeeeee;
+$dayNum: #48949c;
+
+@import "_header.scss";
+@import "_main-hero.scss";
+@import "_basic-hero.scss";
+@import "_dates-section.scss";
+
+@import "_about-section.scss";
+@import "_services.scss";
+@import "_galery.scss";
+@import "_managers.scss";
+@import "_form-section.scss";
+
+@import "_block-news.scss";
+
+@import "_content-table.scss";
+@import "_events.scss";
+
+@import "_footer.scss";
+body {
+   font-family: $mainFont;
+}
+
+// =============================================================
+// =============================================================
+//! PAGE
+//?-------------------------------------------------------------
+.page {
+   &--background {
+      background: url("../img/page/page-bg-1.jpg") 0 0 / cover no-repeat;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         left: 0;
+         top: 0;
+         background-color: hsla(0, 0%, 0%, 0.4);
+         z-index: 1;
+      }
+      // filter: blur(2px);
+   }
+   &--second-background {
+      background: url("../img/page/page-bg-2.jpg") 0 0 / cover no-repeat;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         left: 0;
+         top: 0;
+         background-color: hsla(0, 0%, 0%, 0.8);
+         z-index: 1;
+      }
+   }
+
+   & > * {
+      position: relative;
+      z-index: 3;
+   }
+   &__container {
+   }
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   padding-top: toRem(102);
+   @media (max-width: toEm(1000)) {
+      padding-top: toRem(99);
+   }
+   @media (max-width: toEm(840)) {
+      padding-top: toRem(62);
+   }
+   &__hero {
+   }
+
+   &__dates {
+   }
+}
+
+// =============================================================
+// =============================================================
+//! FOOTER
+//?-------------------------------------------------------------
