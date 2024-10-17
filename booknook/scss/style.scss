@@ -1,0 +1,398 @@
+@use "sass:math";
+
+$mainFont: "Manrope", sans-serif;
+// colors
+
+// absolute color
+$absoluteBlack: #000;
+$absoluteWhite: #fff;
+
+// black Shades
+$black06: #0f0f0f;
+$black08: #141414;
+$black10: #1a1a1a;
+$black12: #1f1f1f;
+$black15: #262626;
+$black20: #333333;
+$black25: #404040;
+$black30: #4c4c4c;
+
+// grey shades
+
+$grey60: #999999;
+$grey65: #a6a6a6;
+$grey70: #b3b3b3;
+$grey75: #bfbfbf;
+$grey90: #e4e4e7;
+$grey95: #f1f1f3;
+$grey97: #f7f7f8;
+$grey99: #fcfcfd;
+
+// yellow shades
+
+$yellow99: #fcf0d1;
+$yellow95: #f8e6aa;
+$yellow90: #ffd995;
+$yellow80: #f1c374;
+$yellow60: #ffe710;
+$yellow55: #ffd92d;
+$yellow50: #ffcf1f;
+$yellow45: #fec201;
+$yellowHover: #db9600;
+
+@import "_reset.scss";
+@import "_fonts.scss";
+
+// red shades
+$red45: #e50000;
+$red50: #ff0000;
+$red55: #ff1919;
+$red60: #ff3333;
+$red80: #ff9999;
+$red90: #ffcccc;
+$red95: #ffe5e5;
+$red99: #fffafa;
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+@import "_functions.scss";
+
+@import "_icons.scss";
+
+body {
+   background-color: $black08;
+   font-family: $mainFont;
+   // margin-inline-end: toRem(5);
+   //text-align: end;
+   &.menu-open {
+      overflow: hidden;
+   }
+}
+
+.wrapper {
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+.wrapper main {
+   flex-grow: 1;
+}
+//* container can changes
+
+[class*="__container"] {
+   max-width: toRem(1626); //1596
+   margin: 0 auto;
+   padding: 0 toRem(15);
+}
+.page {
+   // &--padding {
+   //    padding-top: toRem(206);
+   // }
+   &--padding {
+      padding-top: toRem(150);
+      @media (max-width: toEm(900)) {
+         padding-top: toRem(100);
+      }
+      @media (max-width: toEm(600)) {
+         padding-top: toRem(90);
+      }
+   }
+}
+// компоненти
+@import "_common.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_frequently.scss";
+@import "_trial.scss";
+
+// book-catalog
+@import "_book.scss";
+
+// support
+@import "_support.scss";
+
+// book-view
+@import "_book-view.scss";
+
+// all-books
+@import "_all-books.scss";
+
+// book-read
+@import "_book-read.scss";
+
+@import "_read.scss";
+
+// payment-features
+@import "_payment-features.scss";
+
+// =============================================================
+// =============================================================
+//! HEADER
+//?-------------------------------------------------------------
+// =============================================================
+// =============================================================
+//! PAGE
+//?-------------------------------------------------------------
+.page {
+   &__hero {
+      visibility: hidden;
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 1.5s, visibility 1.5s, transform 0.5s;
+      &.show {
+         visibility: visible;
+         opacity: 1;
+         transform: scale(1);
+      }
+   }
+
+   &__categories {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(50%);
+      transition: opacity 1.5s, visibility 1.5s, transform 0.5s;
+      &.show {
+         visibility: visible;
+         opacity: 1;
+         transform: translateY(0%);
+      }
+   }
+}
+// ======================================================
+
+.hero {
+   &--margin {
+      @include adaptiveValue("margin-bottom", 200, 100);
+   }
+
+   &__background {
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         left: 0;
+         top: 0;
+         background: url("../img/page/hero/shade.png") 0 0 / cover no-repeat;
+         z-index: 1;
+      }
+   }
+
+   &__image {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1921 / 860;
+      object-fit: cover;
+      @include adaptiveValue("min-height", 860, 500);
+   }
+
+   &__decoration {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      width: 100%;
+      @include adaptiveValue("max-width", 200, 100);
+   }
+
+   &__text-decoration {
+      position: absolute;
+      z-index: 3;
+      top: 0%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+      width: 100%;
+      @include adaptiveValue("max-width", 650, 400);
+      text-align: center;
+
+      @include adaptiveValue("font-size", 22, 14);
+      font-weight: 700;
+      color: $absoluteWhite;
+
+      padding: toRem(5);
+
+      line-height: 1.5;
+
+      animation: scaleText 3s ease-in-out infinite alternate;
+
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      .show & {
+         visibility: visible;
+         opacity: 1;
+         top: 30%;
+      }
+   }
+
+   @keyframes scaleText {
+      0% {
+         transform: translate(-50%, -50%) scale(1);
+      }
+      100% {
+         transform: translate(-50%, -50%) scale(1.05);
+      }
+   }
+
+   &__content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      margin: 0 auto;
+      @include adaptiveValue("margin-top", -70, -30);
+      max-width: toRem(1096);
+      &:last-child {
+         margin-bottom: 0;
+      }
+      .button {
+         @include adaptiveValue("font-size", 18, 14);
+      }
+
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(50%);
+      transition: all 1s ease-in-out;
+      .show & {
+         visibility: visible;
+         opacity: 1;
+         transform: translateY(0%);
+      }
+   }
+
+   &__title {
+      font-weight: 700;
+      @include adaptiveValue("font-size", 58, 28);
+      color: $absoluteWhite;
+      line-height: 1.4;
+      margin-bottom: toRem(14);
+   }
+
+   &__text {
+      @include adaptiveValue("margin-bottom", 50, 25);
+      p {
+         color: $grey60;
+         font-weight: 400;
+         @include adaptiveValue("font-size", 18, 14);
+         line-height: 1.4;
+         &:not(:last-child) {
+            margin-bottom: toRem(10);
+         }
+      }
+   }
+}
+
+// ======================================================
+.categories {
+   &__container {
+      @media (max-width: toEm(500)) {
+         padding-right: 0;
+      }
+   }
+}
+
+#homePageCategoriesNewPlace {
+   .swiper-navigation {
+      margin-top: toRem(24);
+      @include adaptiveValue("font-size", 20, 16);
+      background-color: transparent;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: toRem(16);
+      border-radius: 0;
+      border: none;
+      align-items: center;
+
+      &__arrow {
+         display: none;
+      }
+
+      &__lines {
+         display: flex;
+         gap: toRem(0);
+         align-items: center;
+         .swiper-pagination-bullet {
+            background-color: $black20;
+            border-radius: 0;
+            width: toRem(16);
+            opacity: 1;
+            height: toRem(4);
+            &:first-child {
+               border-radius: toRem(5) 0 0 toRem(5);
+            }
+            &:last-child {
+               border-radius: 0 toRem(5) toRem(5) 0;
+            }
+         }
+         .swiper-pagination-bullet-active {
+            background-color: $yellow45;
+            width: toRem(23);
+            border-radius: toRem(5) !important;
+         }
+      }
+      .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+         margin: 0;
+      }
+   }
+}
+
+.case {
+   width: 100%;
+   &__iframe {
+      width: 100%;
+      height: toRem(500);
+   }
+}
+// =============================================================
+// =============================================================
+//! FOOTER
+//?-------------------------------------------------------------
+
+#preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   z-index: 9999;
+}
+
+.spinner {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 40px;
+   height: 40px;
+   margin-top: -20px;
+   margin-left: -20px;
+   border: 4px solid #f3f3f3;
+   border-top: 4px solid #3498db;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}

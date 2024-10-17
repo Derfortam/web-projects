@@ -1,0 +1,117 @@
+.events {
+   font-size: toRem(40);
+   @media (max-width: toEm(900)) {
+      font-size: toRem(30);
+   }
+   @media (max-width: toEm(450)) {
+      font-size: toRem(20);
+   }
+   &--margin {
+      margin: toRem(70) 0;
+   }
+   display: flex;
+   flex-direction: column;
+   gap: toEm(40, 40);
+
+   &__section {
+   }
+
+   &__year {
+      padding: toRem(22);
+      font-size: toEm(60, 40);
+      font-weight: 700;
+      background-color: $mainColor;
+      text-align: center;
+      margin-bottom: toEm(40, 40);
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: toEm(40, 40);
+   }
+
+   &__block {
+      background-color: $mainColor;
+      display: flex;
+
+      &:nth-child(odd) {
+         display: flex;
+         opacity: 0;
+         visibility: hidden;
+         transform: translateX(50%);
+         transition: all 0.6s;
+
+         &.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0%);
+         }
+
+         @media (max-width: toEm(920)) {
+            flex-direction: column;
+         }
+      }
+      &:nth-child(even) {
+         display: flex;
+         flex-direction: row-reverse;
+         display: flex;
+         opacity: 0;
+         visibility: hidden;
+         transform: translateX(-50%);
+         transition: all 0.6s;
+
+         &.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0%);
+         }
+         @media (max-width: toEm(920)) {
+            flex-direction: column;
+         }
+      }
+   }
+
+   &__img {
+      flex-basis: 30%;
+      aspect-ratio: 568 / 369;
+      // width: 100%;
+      display: block;
+      object-fit: cover;
+
+      max-width: toRem(568);
+      @media (max-width: toEm(920)) {
+         max-width: 100%;
+      }
+      // max-width: toRem(568);
+   }
+
+   &__info {
+      flex-basis: 70%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: toRem(15);
+      padding: toEm(30, 40) toEm(20, 40);
+   }
+
+   &__name {
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+
+   &__text {
+      p {
+         font-size: toRem(18);
+         font-weight: 500;
+         line-height: 1.5;
+         &:not(:last-child) {
+            margin-bottom: toRem(15);
+         }
+         @media (max-width: toEm(900)) {
+            font-size: toRem(16);
+         }
+      }
+   }
+}

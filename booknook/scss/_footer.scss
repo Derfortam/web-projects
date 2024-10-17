@@ -1,0 +1,143 @@
+.footer {
+   background-color: $black06;
+   color: $grey60;
+   font-size: toRem(18);
+   @include adaptiveValue("font-size", 18, 14);
+   @include adaptiveValue("padding-top", 100, 50);
+   @include adaptiveValue("padding-bottom", 50, 20);
+
+   &__container {
+   }
+
+   &__body {
+      width: 100%;
+
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      column-gap: toRem(55);
+      row-gap: toRem(30);
+
+      @include adaptiveValue("padding-bottom", 100, 50);
+      border-bottom: toRem(1) solid $black15;
+
+      @media (max-width: toEm(500)) {
+         justify-content: space-around;
+      }
+   }
+}
+.footer-menu-block {
+   display: flex;
+   gap: toEm(24, 18);
+   flex-direction: column;
+   align-items: flex-start;
+
+   &__title {
+      @include adaptiveValue("font-size", 20, 16);
+      font-weight: 600;
+      color: $absoluteWhite;
+   }
+
+   &__list {
+      display: flex;
+      gap: toEm(12, 18);
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   &__item {
+   }
+
+   &__link {
+      font-weight: 500;
+      line-height: 1.2;
+      text-decoration: transparent;
+      text-decoration: initial;
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            color: $absoluteWhite;
+            text-decoration-color: $absoluteWhite;
+            text-decoration: underline;
+         }
+      }
+   }
+
+   &__social {
+      display: inline-grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: toRem(14);
+   }
+
+   &__link-social {
+      @include adaptiveValue("font-size", 24, 18);
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      width: 100%;
+      color: $absoluteWhite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::before {
+         padding: toRem(15);
+         background-color: $black15;
+         border-radius: toRem(8);
+         transition: all 0.3s;
+      }
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            transform: scale(1.1);
+            &::before {
+               background-color: $black12;
+            }
+         }
+      }
+   }
+}
+
+.bottom-footer {
+   @include adaptiveValue("padding-top", 24, 16);
+   display: flex;
+   column-gap: toRem(30);
+   row-gap: toRem(15);
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+
+   // .bottom-footer__sign
+
+   &__sign {
+      font-weight: 400;
+      line-height: 1.3;
+   }
+
+   // .bottom-footer__other
+
+   &__other {
+      a {
+         font-weight: 400;
+         line-height: 1.3;
+         &:not(:last-child) {
+            padding: 0 toEm(20, 18);
+            border-right: toRem(2) solid $black15;
+         }
+         &:first-child {
+            padding: 0;
+            padding-right: toEm(20, 18);
+         }
+         &:last-child {
+            padding: 0;
+            padding-left: toEm(20, 18);
+         }
+         transition: color 0.3s;
+         @media (any-hover: hover) {
+            &:hover {
+               color: $absoluteWhite;
+            }
+         }
+      }
+   }
+}
