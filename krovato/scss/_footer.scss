@@ -1,0 +1,218 @@
+.footer {
+   background-color: $mainTextColor;
+   color: $mainBGColor;
+   padding-top: toRem(40);
+
+   &__container {
+      &--changed {
+         display: flex;
+         justify-content: space-between;
+         gap: toRem(30);
+         flex-wrap: wrap;
+         row-gap: toRem(40);
+      }
+   }
+
+   &__top {
+      // display: flex;
+      // justify-content: space-between;
+      // gap: toRem(10);
+      padding-bottom: toRem(40);
+      border-bottom: 1px solid $secondColor;
+      // flex-wrap: wrap;
+   }
+
+   &__block {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+      @media (max-width: toEm(868)) {
+         flex-direction: row;
+         flex-wrap: wrap;
+      }
+   }
+
+   &__logo {
+      aspect-ratio: 250 / 50;
+      object-fit: cover;
+      width: 100%;
+      max-width: toRem(250);
+   }
+
+   &__social-media {
+      font-size: toRem(17);
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+   }
+
+   &__images-social-media {
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+      a {
+         aspect-ratio: 1 / 1;
+         width: 100%;
+         object-fit: cover;
+         max-width: toRem(40);
+         transition: all 0.3s;
+         @media (any-hover: hover) {
+            &:hover {
+               img {
+                  transform: scale(1.1);
+               }
+            }
+         }
+      }
+      img {
+         width: 100%;
+         transition: all 0.3s;
+      }
+   }
+
+   &__payment {
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+   }
+
+   &__navigation {
+      display: flex;
+      justify-content: space-between;
+      gap: toRem(40);
+      flex-wrap: wrap;
+   }
+
+   &__block-nav {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+   }
+
+   &__title {
+      font-size: toRem(20);
+      font-weight: 600;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+   }
+
+   &__item {
+   }
+
+   &__link {
+      font-size: toRem(17);
+      font-weight: 400;
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            color: $accentColor;
+            text-decoration: underline;
+         }
+      }
+   }
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+      max-width: toRem(250);
+      width: 100%;
+      @media (max-width: toEm(1149)) {
+         flex-direction: row;
+         flex-wrap: wrap;
+         max-width: 100%;
+      }
+   }
+
+   &__block-info {
+      display: flex;
+      gap: toRem(15);
+      max-width: toRem(250);
+      // width: 100%;
+      flex-grow: 1;
+      text-align: left;
+      align-items: flex-start;
+
+      h6 {
+         font-size: toRem(20);
+         font-weight: 600;
+      }
+   }
+   &__actions-numbers {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+   }
+   &__wrapper-icon {
+      flex-shrink: 0;
+      aspect-ratio: 1 /1;
+      width: 100%;
+      height: 100%;
+      max-width: toRem(50);
+      max-height: toRem(50);
+      // padding: toRem(15);
+      border-radius: 50%;
+      border: 1px solid $secondColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__icon {
+      width: 100%;
+      // height: 100%;
+      max-width: toRem(20);
+      // padding: toRem(15);
+      // border-radius: 50%;
+      object-fit: cover;
+      // border: 1px solid $secondColor;
+   }
+
+   &__numbers {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+      a {
+         font-size: toRem(20);
+         font-weight: 600;
+         transition: all 0.3s;
+         @media (any-hover: hover) {
+            &:hover {
+               color: $secondColor;
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+
+   &__call {
+      font-size: toRem(20);
+      font-weight: 600;
+      color: $accentColor;
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            color: $accentColorHover;
+            text-decoration: underline;
+         }
+      }
+   }
+
+   &__location {
+      font-size: toRem(20);
+      font-weight: 600;
+   }
+
+   &__bottom {
+      text-align: center;
+      font-size: toRem(15);
+      font-weight: 400;
+      color: $secondColor;
+      padding: toRem(20) 0;
+   }
+}

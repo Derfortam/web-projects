@@ -1,0 +1,98 @@
+.hero {
+   &--margin {
+      margin: toRem(30) 0 toRem(70);
+   }
+
+   &__container {
+      position: relative;
+   }
+
+   &__block-pagin {
+      padding: toRem(20);
+      position: absolute;
+      //   left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      left: 50%;
+      z-index: 3;
+   }
+   &__pagination {
+      .swiper-pagination-bullet {
+         width: toRem(15);
+         height: toRem(15);
+         border-radius: 50%;
+         background-color: $mainBGColor;
+         opacity: 1;
+         &-active {
+            background-color: $accentColor;
+            border: toRem(3) solid $mainBGColor;
+         }
+      }
+   }
+
+   &__navigation {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+
+      padding: 0 toRem(40);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      justify-content: space-between;
+   }
+
+   &__button {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      max-width: toRem(60);
+      z-index: 3;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: toRem(20);
+      color: $accentColor;
+      aspect-ratio: 1/1;
+      background-color: $mainBGColor;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $secondColor;
+         }
+      }
+   }
+
+   #heroPrevSlide {
+      left: toRem(30);
+   }
+   #heroNextSlide {
+      right: toRem(30);
+   }
+
+   &__slider {
+   }
+
+   &__wrapper {
+   }
+
+   &__slide {
+   }
+
+   &__image {
+      aspect-ratio: 1290 / 420;
+      object-fit: cover;
+      width: 100%;
+      border-radius: toRem(8);
+      @media (max-width: toEm(600)) {
+         aspect-ratio: 410 / 600;
+         object-position: left;
+      }
+   }
+}

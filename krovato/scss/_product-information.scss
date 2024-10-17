@@ -1,0 +1,15 @@
+@import "product-information/_main-product-overview";
+@import "product-information/_info-about-product.scss";
+@import "product-information/_description-prod.scss";
+@import "product-information/_comments.scss";
+@import "product-information/_your-review.scss";
+@import "product-information/_some-prod.scss";
+
+.page {
+   &__main-product-overview {
+   }
+}
+.page {
+   &__prod-description {
+   }
+}

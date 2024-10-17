@@ -1,0 +1,240 @@
+.review-section {
+   display: flex;
+   flex-direction: column;
+   font-size: toRem(20);
+   gap: toEm(40, 20);
+   &__title {
+      font-size: toRem(40);
+      font-weight: 600;
+   }
+
+   &__wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: toRem(30);
+      @media (max-width: toEm(850)) {
+         flex-direction: column;
+         align-items: stretch;
+      }
+   }
+
+   &__comment-review {
+   }
+
+   &__write {
+   }
+}
+.comment-review {
+   font-size: toRem(20);
+   display: flex;
+   flex-direction: column;
+   gap: toEm(40, 20);
+   @media (max-width: toEm(797)) {
+      font-size: toRem(14);
+   }
+
+   &__tabs {
+      display: flex;
+      align-items: center;
+      gap: toEm(30, 20);
+      flex-wrap: wrap;
+      border-bottom: 4px solid $mainBGColor;
+      padding-bottom: toRem(10);
+   }
+
+   &__button {
+      font-size: toEm(20, 20);
+      font-weight: 600;
+      line-height: 1.3;
+      position: relative;
+      &.active {
+         &::before {
+            content: "";
+            border-radius: toRem(8);
+            position: absolute;
+            left: 0;
+            top: calc(100% + toRem(10));
+            width: calc(100% + toRem(10));
+            height: 4px;
+            background-color: $accentColor;
+         }
+      }
+   }
+
+   &__tabcontent {
+      display: none;
+      // width: 0;
+      // visibility: hidden;
+      // height: 0;
+      // display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+   }
+
+   &__block {
+      padding: toEm(30, 20);
+      border-radius: toRem(8);
+      background-color: $mainBGColor;
+      box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      gap: toEm(30, 20);
+   }
+
+   &__titling {
+      display: flex;
+      align-items: center;
+      gap: toEm(20, 20);
+      flex-wrap: wrap;
+   }
+
+   &__icon {
+      max-width: toEm(50, 20);
+      width: 100%;
+      aspect-ratio: 1 /1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $accentColor;
+      img {
+         max-width: toEm(18, 20);
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__name {
+      font-size: toEm(19, 20);
+      font-weight: 400;
+      flex-grow: 1;
+   }
+
+   &__raiting {
+   }
+
+   &__star-raiting {
+   }
+
+   &__time {
+      font-size: toEm(19, 20);
+      font-weight: 400;
+   }
+
+   &__text {
+      p {
+         color: rgba(83, 83, 83, 1);
+         font-size: toEm(18, 20);
+         line-height: 1.4;
+         font-weight: 400;
+         &:not(:last-child) {
+            margin-bottom: toRem(10);
+         }
+      }
+   }
+
+   &__under-info {
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      flex-wrap: wrap;
+   }
+
+   &__product-img {
+      max-width: toEm(50, 20);
+      width: 100%;
+      aspect-ratio: 1 /1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $accentColor;
+      img {
+         max-width: toEm(40, 20);
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__prod-name {
+      font-size: toEm(20, 20);
+      font-weight: 600;
+   }
+   &__nav {
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      flex-direction: column;
+      @media (max-width: toEm(850)) {
+         .navigation-pages {
+            display: none;
+         }
+      }
+   }
+
+   &__show-more {
+      align-self: center;
+   }
+}
+
+.write-review-section {
+   &__titling {
+      display: flex;
+      align-items: flex-start;
+      gap: toRem(15);
+   }
+
+   &__icon {
+      max-width: toRem(80);
+      width: 100%;
+      aspect-ratio: 1 /1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: $mainBGColor;
+      img {
+         max-width: toRem(57);
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__content {
+      h6 {
+         font-size: toRem(13);
+         font-weight: 400;
+         color: $secondColor;
+         line-height: 1.3;
+      }
+   }
+
+   &__title {
+      font-size: toRem(20);
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: toRem(12);
+   }
+
+   &__rating {
+      color: $accentColorHover;
+      font-size: toRem(19);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: toRem(12);
+   }
+
+   &__raiting {
+   }
+
+   &__star-raiting {
+   }
+
+   &__your-review {
+      display: flex;
+      @media (max-width: toEm(850)) {
+         display: flex;
+      }
+   }
+}

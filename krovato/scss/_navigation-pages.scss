@@ -1,0 +1,78 @@
+.navigation-pages {
+   display: flex;
+   align-items: center;
+   gap: toRem(10);
+   width: 100%;
+   justify-content: center;
+   min-width: 0;
+   &__button {
+      min-width: 0;
+
+      flex-shrink: 0;
+      background-color: $mainBGColor;
+      // padding: toRem(13);
+      font-size: toRem(16);
+      color: $secondColor;
+      font-weight: 400;
+      border-radius: toRem(8);
+      border: 1px solid $secondColor;
+      max-width: toRem(50);
+      width: 100%;
+      aspect-ratio: 1 /1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+         background-color: $accentColor;
+         border: none;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   &__wrapper-pages {
+      min-width: 0;
+      // width: 100%;
+      justify-content: center;
+      // flex-grow: 1;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+   }
+
+   &__page {
+      min-width: 0;
+      flex-shrink: 0;
+      background-color: $mainBGColor;
+      // padding: toRem(13);
+      color: $secondColor;
+      font-size: toRem(16);
+      font-weight: 400;
+      border-radius: toRem(8);
+      border: 1px solid $secondColor;
+      // width: 100%;
+      width: toRem(50);
+      aspect-ratio: 1 /1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+         background-color: $accentColor;
+         border: none;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            cursor: pointer;
+         }
+      }
+      &.active,
+      &.chosen {
+         background-color: $accentColor;
+         border: none;
+      }
+   }
+}

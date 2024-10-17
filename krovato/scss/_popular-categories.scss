@@ -1,0 +1,41 @@
+.popular-categories {
+   &--margin {
+      margin-bottom: toRem(70);
+   }
+   &__container {
+   }
+
+   &__title {
+      @extend %title;
+      margin-bottom: toRem(40);
+   }
+
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: toRem(10);
+      row-gap: toRem(24);
+      @media (max-width: toEm(990)) {
+         grid-template-columns: repeat(4, 1fr);
+      }
+      @media (max-width: toEm(700)) {
+         grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: toEm(472)) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+
+   &__categories-card {
+   }
+}
+.categories-card {
+   &__title {
+   }
+
+   &__image {
+   }
+
+   &__link {
+   }
+}

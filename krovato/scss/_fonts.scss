@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+
+@font-face {
+   font-family: "icons";
+   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Proxima Nova";
+   src: url("../fonts/ProximaNovaT-Thin.woff2") format("woff2"), url("../fonts/ProximaNovaT-Thin.woff") format("woff");
+   font-weight: 100;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Proxima Nova";
+   src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff");
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Proxima Nova";
+   src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+   font-weight: 400;
+   font-style: normal;
+}
+
+// @font-face {
+//    font-family: "Causten";
+//    src: url("../fonts/causten/Causten-Medium.woff2") format("woff2"), url("../fonts/causten/Causten-Medium.woff") format("woff");
+//    font-weight: 500;
+// }
+
+// 100 - thin
+// 300 - light
+// 400 - Regular (normal) (за замовчуванням)
+// 500 - medium
+// 600 - semibold
+// 700 - bold
+// 900 - black

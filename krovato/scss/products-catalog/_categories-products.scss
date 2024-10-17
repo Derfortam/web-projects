@@ -1,0 +1,292 @@
+.categiries-products {
+   &__container {
+      display: flex;
+      gap: toRem(31);
+      align-items: flex-start;
+      @media (max-width: toEm(900)) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &--margin {
+      margin-bottom: toRem(70);
+   }
+
+   &__body {
+      // flex: 1 1 100%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(40);
+      &--margin {
+         margin-bottom: toRem(70);
+      }
+   }
+
+   &__show-more-text {
+      // width: 100%;
+      &.show-more {
+         padding-top: 0;
+         background-color: transparent;
+         position: relative;
+         display: flex;
+         align-items: center;
+         gap: toRem(30);
+         flex-direction: column;
+         &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: toRem(150);
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, #ffffff0c 0%, #fff 100%);
+         }
+      }
+   }
+   &__main-content-wrapper {
+      flex-grow: 1;
+   }
+
+   &__titling {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+   }
+
+   &__up {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: toRem(15);
+      justify-content: space-between;
+      @media (max-width: toEm(900)) {
+         flex-direction: column;
+      }
+   }
+
+   &__title {
+      font-weight: 600;
+      font-size: toRem(19);
+      line-height: 1.3;
+   }
+
+   &__sorting {
+      display: flex;
+      align-items: center;
+      gap: toRem(14);
+      font-weight: 600;
+      font-size: toRem(19);
+      line-height: 1.3;
+      @media (max-width: toEm(900)) {
+         flex-direction: column;
+         // align-items: flex-start;
+      }
+   }
+
+   &__wrapper-select {
+      position: relative;
+   }
+
+   &__select {
+      width: 100%;
+      color: $mainTextColor;
+      background-color: transparent;
+      appearance: none; /* For modern browsers */
+      -moz-appearance: none; /* For Firefox */
+      -webkit-appearance: none; /* For Safari and Chrome */
+      font-size: toRem(17);
+      font-weight: 400;
+      // padding: toRem(10) toRem(40) toRem(10) toRem(10);
+      padding-right: toRem(24);
+      &::-ms-expand {
+         display: none; /* Приховування стрілки в Internet Explorer */
+      }
+      &::-ms-expand {
+         display: none;
+      }
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+         -webkit-appearance: none;
+         margin: 0;
+      }
+   }
+   &__custom-button {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: toRem(10);
+      height: toRem(10);
+      font-size: toRem(13);
+      pointer-events: none;
+      font-weight: 100;
+      &::before {
+         transform: rotate(-90deg);
+         transition: transform 0.3s;
+      }
+      &.active {
+         &::before {
+            transform: rotate(90deg) translate(-50%, 0%);
+         }
+      }
+   }
+
+   &__down {
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      flex-wrap: wrap;
+   }
+
+   &__categories-sign {
+      background-color: $mainBGColor;
+      padding: toRem(10) toRem(15) toRem(10) toRem(10);
+      font-size: toRem(15);
+      font-weight: 400;
+      border-radius: toRem(8);
+      border: 1px solid $secondColor;
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      &.active {
+         background-color: $accentColor;
+         border: none;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   &__close-icon {
+      max-width: toRem(8);
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+   }
+
+   &__products {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(40);
+   }
+
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(toRem(250), 1fr));
+      gap: toRem(15);
+   }
+
+   &__navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: toRem(30);
+   }
+
+   &__show-more {
+      padding: toRem(13) toRem(40);
+      color: $mainBGColor;
+      font-size: toRem(19);
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: toRem(17);
+      background-color: $accentColor;
+      border-radius: toRem(8);
+      transition: background-color 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $accentColorHover;
+         }
+      }
+   }
+
+   &__pages {
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      width: 100%;
+      justify-content: center;
+      min-width: 0;
+   }
+
+   &__nav-button {
+      min-width: 0;
+
+      flex-shrink: 0;
+      background-color: $mainBGColor;
+      // padding: toRem(13);
+      font-size: toRem(16);
+      color: $secondColor;
+      font-weight: 400;
+      border-radius: toRem(8);
+      border: 1px solid $secondColor;
+      max-width: toRem(50);
+      width: 100%;
+      aspect-ratio: 1 /1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+         background-color: $accentColor;
+         border: none;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   &__page {
+      min-width: 0;
+      flex-shrink: 0;
+      background-color: $mainBGColor;
+      // padding: toRem(13);
+      color: $secondColor;
+      font-size: toRem(16);
+      font-weight: 400;
+      border-radius: toRem(8);
+      border: 1px solid $secondColor;
+      // width: 100%;
+      width: toRem(50);
+      aspect-ratio: 1 /1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+         background-color: $accentColor;
+         border: none;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            cursor: pointer;
+         }
+      }
+      &.active {
+         background-color: $accentColor;
+      }
+   }
+
+   &__all-pages {
+      min-width: 0;
+      // width: 100%;
+      justify-content: center;
+      // flex-grow: 1;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+   }
+}
+
+@media (max-width: toEm(900)) {
+   #nav-pages {
+      display: none;
+   }
+}

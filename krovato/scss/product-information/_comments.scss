@@ -1,0 +1,389 @@
+.description-prod {
+   &__comments-section {
+   }
+}
+.comments-section {
+   background-color: $mainBGColor;
+   padding: toRem(30);
+   @media (max-width: toEm(797)) {
+      padding: toRem(15);
+   }
+   border-radius: toRem(8);
+   &__title {
+      font-size: toRem(30);
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: toRem(5);
+      @media (max-width: toEm(850)) {
+         font-size: toRem(24);
+      }
+   }
+
+   &__assessment {
+      margin-bottom: toRem(40);
+      font-size: toRem(17);
+      font-weight: 400;
+      color: $secondColor;
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      flex-wrap: wrap;
+   }
+   &__all-comments {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+      align-items: center;
+   }
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+   }
+
+   &__block {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(20);
+      &:not(:last-child) {
+         padding-bottom: toRem(30);
+         border-bottom: 2px solid rgba(248, 248, 248, 1);
+      }
+      &.show-answers {
+         //  border-bottom: 2px solid $accentColor;
+      }
+   }
+
+   &__titling {
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   &__user-name {
+      flex-grow: 1;
+      font-size: toRem(17);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      &::before {
+         font-size: toRem(19);
+         padding: toRem(10);
+         border-radius: 50%;
+         border: 1px solid $accentColor;
+         display: inline-flex;
+         justify-content: center;
+         align-items: center;
+         color: $secondColor;
+      }
+   }
+   &__defendant-name {
+      font-size: toRem(17);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: toRem(20);
+      &::before {
+         color: $accentColor;
+      }
+   }
+
+   &__time {
+      font-size: toRem(17);
+      font-weight: 400;
+   }
+
+   &__text {
+      p {
+         font-size: toRem(16);
+         font-weight: 400;
+         line-height: 1.4;
+         &:not(:last-child) {
+            margin-bottom: toRem(10);
+         }
+      }
+      @media (max-width: toEm(797)) {
+         p {
+            font-size: toRem(14);
+         }
+      }
+   }
+
+   &__actions {
+      display: flex;
+      align-items: center;
+      gap: toRem(30);
+      flex-wrap: wrap;
+   }
+
+   &__act {
+      font-size: toRem(17);
+      font-weight: 400;
+      color: $fifthhColor;
+      display: flex;
+      align-items: center;
+      gap: toRem(6);
+      &::before {
+         color: $accentColor;
+         font-size: toRem(22);
+      }
+
+      &--like {
+         &.giveLike {
+            font-weight: 600;
+            &::before {
+               color: $accentColorHover;
+            }
+         }
+         font-weight: 400;
+      }
+
+      &--show {
+         span {
+            flex-shrink: 0;
+            content: "";
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            max-width: toRem(22);
+            width: toRem(22);
+            background-color: $accentColor;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: toRem(14);
+            font-weight: 400;
+            color: $mainBGColor;
+         }
+         &::before {
+         }
+         .open-hidden-comments & {
+            flex-direction: row;
+
+            &::after {
+               content: "";
+               display: none;
+            }
+         }
+      }
+   }
+
+   &__open-comments {
+   }
+
+   &__user-name--bold {
+      font-weight: 600;
+   }
+
+   &__write-comment {
+   }
+
+   &__show-more-comments {
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+      background-color: $accentColor;
+      border-radius: toRem(8);
+      padding: toRem(15) toRem(32);
+      color: $mainBGColor;
+      font-size: toRem(19);
+      font-weight: 600;
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $accentColorHover;
+            transform: scale(1.1);
+         }
+      }
+   }
+}
+.info-about-product {
+   &__raiting {
+   }
+
+   &__star-raiting {
+   }
+}
+
+.open-comments {
+   display: none;
+   .open-hidden-comments & {
+      display: flex;
+   }
+   //    display: flex;
+   flex-direction: column;
+   gap: toRem(20);
+   // padding: toRem(30) 0;
+   border-top: 2px solid $accentColor;
+   margin-left: toRem(70);
+   @media (max-width: toEm(797)) {
+      margin-left: 0;
+      // padding: toRem(10) 0;
+      gap: toRem(15);
+   }
+   .comments-section__titling {
+      @media (max-width: toEm(797)) {
+         gap: toRem(10);
+      }
+   }
+   .comments-section__defendant-name {
+      @media (max-width: toEm(797)) {
+         gap: toRem(5);
+      }
+   }
+   .icon-user {
+      font-size: toRem(17);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      &::before {
+         font-size: toRem(19);
+         padding: toRem(10);
+         border-radius: 50%;
+         border: 1px solid $accentColor;
+         display: inline-flex;
+         justify-content: center;
+         align-items: center;
+         color: $secondColor;
+      }
+      @media (max-width: toEm(797)) {
+         &::before {
+            font-size: toRem(12);
+         }
+      }
+   }
+   h5 {
+      @media (max-width: toEm(797)) {
+         font-size: toRem(14);
+      }
+   }
+   &__block {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(20);
+   }
+
+   &__comments-section {
+   }
+}
+
+.write-comment {
+   display: none;
+   .open-write-comments & {
+      display: flex;
+   }
+   background-color: rgba(248, 248, 248, 1);
+   padding: toRem(30);
+   border-radius: toRem(8);
+   // display: flex;
+   flex-direction: column;
+   gap: toRem(30);
+
+   &__title {
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      &::before {
+         color: $accentColor;
+         font-size: toRem(20);
+      }
+      font-size: toRem(17);
+      font-weight: 400;
+   }
+
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      gap: toRem(30);
+      flex-wrap: wrap;
+      @media (max-width: toEm(797)) {
+         gap: toRem(15);
+      }
+   }
+
+   &__input {
+      height: toRem(50);
+      border-radius: toRem(8);
+      padding: 0 toRem(20);
+      background-color: $mainBGColor;
+      border: 1px solid $secondColor;
+      font-size: toRem(16);
+      font-weight: 400;
+      flex: 1 1 45%;
+      &::placeholder {
+         opacity: 1;
+         font-size: toRem(16);
+         font-weight: 400;
+         color: rgba(83, 83, 83, 1);
+      }
+      @media (max-width: toEm(450)) {
+         width: 100%;
+         flex: 1 1 100%;
+         &::placeholder {
+            font-size: toRem(14);
+         }
+      }
+   }
+
+   &__review {
+      resize: vertical;
+      width: 100%;
+      min-height: toRem(150);
+      border-radius: toRem(8);
+      padding: toRem(20);
+      background-color: $mainBGColor;
+      border: 1px solid $secondColor;
+      font-size: toRem(16);
+      font-weight: 400;
+      &::placeholder {
+         opacity: 1;
+         font-size: toRem(16);
+         font-weight: 400;
+         color: rgba(83, 83, 83, 1);
+      }
+      @media (max-width: toEm(450)) {
+         &::placeholder {
+            font-size: toRem(14);
+         }
+      }
+   }
+
+   &__button {
+      border-radius: toRem(8);
+      background-color: $accentColor;
+      padding: toRem(13) toRem(25);
+      color: $mainBGColor;
+      font-size: toRem(19);
+      font-weight: 600;
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $accentColorHover;
+         }
+      }
+      &--cancel {
+         background-color: transparent;
+         color: $accentColor;
+         border: 1px solid $accentColor;
+         transition: all 0.3s;
+         @media (any-hover: hover) {
+            &:hover {
+               background-color: $secondColor;
+            }
+         }
+      }
+   }
+
+   &__actions {
+      display: flex;
+      align-items: center;
+      gap: toRem(30);
+      flex-wrap: wrap;
+      row-gap: toRem(15);
+   }
+}

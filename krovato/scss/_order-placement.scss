@@ -1,0 +1,569 @@
+.order-placement {
+   &--margin {
+      margin-bottom: toRem(70);
+   }
+   &__title {
+   }
+
+   &__wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: toRem(30);
+      @media (max-width: toEm(1000)) {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__order-info {
+      flex: 1 1 57%;
+   }
+
+   &__backet {
+      flex: 1 1 40%;
+   }
+}
+
+.order-info {
+   display: flex;
+   flex-direction: column;
+   gap: toRem(5);
+
+   &__block {
+      padding: toRem(30);
+      border-radius: toRem(8);
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+      background-color: $mainBGColor;
+      @media (max-width: toEm(797)) {
+         gap: toRem(15);
+         padding: toRem(20);
+      }
+   }
+
+   &__titling {
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+   }
+
+   &__icon {
+      flex-shrink: 0;
+      width: toRem(50);
+      aspect-ratio: 1/ 1;
+      background-color: $accentColor;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+         max-width: toRem(25);
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__title {
+      font-size: toRem(26);
+      font-weight: 600;
+      line-height: 1.4;
+      @media (max-width: toEm(797)) {
+         font-size: toRem(20);
+      }
+   }
+
+   &__wrapper-inputs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+      column-gap: toRem(30);
+      row-gap: toRem(20);
+      @media (max-width: toEm(500)) {
+         grid-template-columns: repeat(auto-fill, minmax(toRem(220), 1fr));
+      }
+      input {
+         border: 1px solid $thirdColor;
+         border-radius: toRem(8);
+         height: toRem(50);
+         padding: 0 toRem(20);
+         font-size: toRem(16);
+         font-weight: 400;
+         color: $fifthhColor;
+         &::placeholder {
+            opacity: 1;
+            font-size: toRem(16);
+            font-weight: 400;
+            color: $fifthhColor;
+         }
+      }
+   }
+
+   &__custom-input {
+      color: $secondColor;
+      font-size: toRem(16);
+      font-weight: 400;
+
+      .custom-input__block-checkbox {
+         &::before {
+            border: 2px solid $thirdColor;
+         }
+      }
+   }
+
+   &__delivery {
+      display: flex;
+      align-items: center;
+      gap: toRem(25);
+      row-gap: toRem(15);
+      flex-wrap: wrap;
+   }
+
+   &__block-delivery {
+      flex-grow: 1;
+      position: relative;
+      padding: toRem(20);
+      border-radius: toRem(8);
+      border: 2px solid rgba(248, 248, 248, 1);
+      &.active-order {
+         border: 2px solid $accentColor;
+      }
+      input {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         opacity: 0;
+      }
+   }
+
+   &__content-delivery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   &__icon-delivery {
+      max-width: toRem(40);
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      margin-bottom: toRem(10);
+   }
+
+   &__name-of-delivery {
+      font-size: toRem(16);
+      font-weight: 400;
+      line-height: 1.3;
+   }
+
+   &__more-info {
+      font-size: toRem(15);
+      font-weight: 400;
+      color: $fifthhColor;
+      line-height: 1.3;
+   }
+
+   &__location {
+      background-color: rgba(248, 248, 248, 1);
+      border-radius: toRem(8);
+      padding: toRem(20);
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   &__info-about-location {
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      div {
+         display: flex;
+         flex-direction: column;
+         gap: toRem(5);
+      }
+      &::before {
+         color: $secondColor;
+         font-size: toRem(26);
+      }
+   }
+
+   &__over-title {
+      font-size: toRem(16);
+      font-weight: 400;
+      line-height: 1.3;
+   }
+
+   &__adress-location {
+      line-height: 1.3;
+      font-size: toRem(20);
+      font-weight: 600;
+   }
+
+   &__map {
+      border-radius: toRem(8);
+      padding: toRem(16) toRem(22);
+      text-align: center;
+      background-color: $accentColor;
+      display: flex;
+      align-items: center;
+      gap: toRem(12);
+      color: $mainBGColor;
+      font-size: toRem(19);
+      font-weight: 600;
+      transition: background-color 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $accentColorHover;
+         }
+      }
+   }
+
+   &__payment-list {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+      @media (max-width: toEm(797)) {
+         gap: toRem(15);
+      }
+   }
+
+   &__item-payment {
+      line-height: 1.3;
+      font-size: toRem(17);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      flex-wrap: wrap;
+      color: $mainTextColor;
+      .custom-input {
+         &__block-checkbox {
+            &::before {
+               border-radius: 50%;
+            }
+         }
+      }
+   }
+
+   &__img-pay {
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      img {
+         max-width: toRem(45);
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__comment {
+      min-height: toRem(150);
+      resize: vertical;
+      border-radius: toRem(8);
+      border: 2px solid rgba(209, 213, 213, 1);
+      padding: toRem(20);
+      font-size: toRem(16);
+      font-weight: 400;
+      line-height: 1.3;
+      color: $mainTextColor;
+      &::placeholder {
+         opacity: 1;
+         font-size: toRem(16);
+         font-weight: 400;
+         line-height: 1.3;
+         color: $mainTextColor;
+      }
+   }
+}
+
+.backet-product {
+   background-color: $mainBGColor;
+   padding: toRem(30);
+   border-radius: toRem(8);
+   &__title {
+      // padding: 0 toRem(30);
+      font-size: toRem(26);
+      font-weight: 600;
+      margin-bottom: toRem(10);
+      span {
+         color: $accentColor;
+      }
+   }
+
+   &__list {
+      // padding: 0 toRem(30);
+   }
+
+   &__block {
+      display: flex;
+      gap: toRem(20);
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: toRem(30) 0;
+      &:not(:last-child) {
+         border-bottom: 2px solid $fourthColor;
+      }
+      @media (max-width: toEm(420)) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__front {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(20);
+      flex: 0 0 9.8%;
+      min-width: toRem(120);
+   }
+
+   &__main-img {
+      border-radius: toRem(8);
+      aspect-ratio: 120 / 100;
+      object-fit: cover;
+      width: 100%;
+   }
+
+   &__count-of-prod {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: toRem(20);
+      font-weight: 600;
+      border-radius: toRem(8);
+      border: 1px solid $secondColor;
+
+      img {
+         padding: toRem(16);
+         aspect-ratio: 1 / 1;
+         object-fit: contain;
+         width: 100%;
+         max-width: toRem(46);
+      }
+   }
+
+   &__content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(5);
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+
+   &__size {
+      font-size: toRem(13);
+      font-weight: 300;
+      color: $secondColor;
+   }
+
+   &__name-product {
+      font-size: toRem(19);
+      font-weight: 600;
+      line-height: 1.3;
+   }
+
+   &__status {
+      font-size: toRem(13);
+      font-weight: 300;
+      margin-bottom: toRem(10);
+   }
+
+   &__cost {
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      flex-wrap: wrap;
+      color: $mainTextColor;
+      font-weight: 600;
+      font-size: toRem(20);
+      .old-price {
+         font-size: toRem(15);
+         font-weight: 400;
+         color: rgba(224, 61, 61, 1);
+         text-decoration: line-through;
+      }
+   }
+
+   &__close {
+      border-radius: 50%;
+      aspect-ratio: 1/ 1;
+      width: 100%;
+      max-width: toRem(20);
+      border: 2px solid $accentColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+         max-width: toRem(8);
+         object-fit: cover;
+         aspect-ratio: 1/ 1;
+         width: 100%;
+      }
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            border: 2px solid $fifthhColor;
+
+            transform: scale(1.2);
+         }
+      }
+   }
+
+   &__promo {
+      margin: 0 toRem(-30);
+      padding: toRem(30);
+      border-top: 2px solid $fourthColor;
+      border-bottom: 2px solid $fourthColor;
+   }
+
+   &__order {
+   }
+}
+
+.promo-code {
+   display: flex;
+   align-items: center;
+   gap: toRem(40);
+   flex-wrap: wrap;
+   &__name {
+      font-size: toRem(18);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: toRem(12);
+      img {
+         aspect-ratio: 1/ 1;
+         object-fit: cover;
+         width: 100%;
+         max-width: toRem(26);
+      }
+   }
+
+   &__actions {
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      input {
+         height: toRem(50);
+         padding: 0 toRem(20);
+         border-radius: toRem(8);
+         border: 1px solid $secondColor;
+         background-color: $mainBGColor;
+         color: $mainTextColor;
+         font-size: toRem(16);
+         font-weight: 400;
+         &::placeholder {
+            color: $mainTextColor;
+            font-size: toRem(16);
+            font-weight: 400;
+            opacity: 1;
+         }
+         width: 100%;
+         max-width: toRem(176);
+      }
+      button {
+         font-size: toRem(19);
+         font-weight: 600;
+         color: $mainBGColor;
+         background-color: $accentColor;
+         padding: toRem(13) toRem(28);
+         border-radius: toRem(8);
+         line-height: 1.3;
+
+         transition: all 0.3s;
+         @media (any-hover: hover) {
+            &:hover {
+               background-color: $accentColorHover;
+            }
+         }
+      }
+   }
+}
+.order-prod {
+   padding-top: toRem(20);
+   display: flex;
+   flex-direction: column;
+   gap: toRem(30);
+   &__title {
+      font-size: toRem(26);
+      font-weight: 600;
+   }
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(15);
+   }
+
+   &__item {
+      line-height: 1.4;
+      font-size: toRem(16);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
+      justify-content: space-between;
+
+      .price {
+         font-size: toRem(26);
+         font-weight: 600;
+      }
+      @media (max-width: toEm(500)) {
+         font-size: toRem(18);
+         flex-direction: column;
+         .price {
+            font-size: toRem(22);
+            font-weight: 600;
+         }
+         &:not(:last-child) {
+            padding-bottom: toRem(10);
+            border-bottom: 1px solid $fourthColor;
+         }
+      }
+   }
+
+   &__line {
+      flex-grow: 1;
+      height: toRem(1);
+      border: 1px dotted $mainTextColor;
+      @media (max-width: toEm(500)) {
+         height: toRem(10);
+      }
+   }
+
+   &__custom-input {
+      font-size: toRem(17);
+      font-weight: 400;
+      line-height: 1.4;
+   }
+
+   &__do-order {
+      font-size: toRem(19);
+      font-weight: 600;
+      color: $mainBGColor;
+      background-color: $accentColor;
+      padding: toRem(13) toRem(28);
+      border-radius: toRem(8);
+      line-height: 1.3;
+
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $accentColorHover;
+         }
+      }
+   }
+
+   &__sign {
+      text-align: center;
+      font-size: toRem(17);
+      font-weight: 400;
+      color: $secondColor;
+      a {
+         color: $accentColor;
+      }
+   }
+}

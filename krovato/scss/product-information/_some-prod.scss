@@ -1,0 +1,25 @@
+.some-products {
+   display: flex;
+   flex-direction: column;
+   gap: toRem(40);
+   &--margin {
+      margin-bottom: toRem(70);
+   }
+
+   &__title {
+      font-size: toRem(40);
+      font-weight: 600;
+      @media (max-width: toEm(797)) {
+         font-size: toRem(26);
+      }
+   }
+
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+      gap: toRem(30);
+   }
+
+   &__full-product-card {
+   }
+}

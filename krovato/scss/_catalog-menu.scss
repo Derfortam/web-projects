@@ -1,0 +1,210 @@
+.catalog-menu {
+   position: absolute;
+   left: 0;
+   top: calc(100% + toRem(20));
+   width: 100%;
+   max-width: toRem(300);
+   background-color: $mainBGColor;
+   //    min-height: toRem(300);
+   border-radius: toRem(8);
+
+   .menu-catalog-has-open-value & {
+      border-radius: toRem(8) 0 0 toRem(8);
+      border-right: 2px solid $accentColor;
+   }
+   @media (max-width: toEm(600)) {
+      max-width: 100%;
+      border-radius: 0;
+      .menu-catalog-has-open-value & {
+         border-radius: 0;
+         border-right: none;
+      }
+   }
+
+   //    overflow: hidden;
+
+   &__list {
+      position: relative;
+      border-radius: toRem(8);
+   }
+
+   &__icon {
+      max-width: toRem(40);
+      width: 100%;
+      aspect-ratio: 1 /1;
+   }
+   &__content {
+      display: flex;
+      gap: toRem(15);
+      align-items: center;
+      width: 100%;
+      @media (max-width: toEm(600)) {
+         padding: toRem(15);
+      }
+   }
+   &__item {
+      display: flex;
+      // gap: toRem(15);
+      align-items: center;
+      justify-content: space-between;
+      &::before {
+         color: $accentColor;
+      }
+      .menu-catalog-has-open-value & {
+         &:first-child {
+            border-radius: toRem(8) 0 0 0;
+         }
+         &:last-child {
+            border-radius: 0 0 0 toRem(8);
+         }
+      }
+
+      &:first-child {
+         border-radius: toRem(8) toRem(8) 0 0;
+      }
+      &:last-child {
+         border-radius: 0 0 toRem(8) toRem(8);
+      }
+      &.active-catalog {
+         background-color: $accentColor;
+         .catalog-menu__sub-list {
+            visibility: visible;
+            height: auto;
+         }
+      }
+      padding: toRem(5) toRem(30);
+      @media (max-width: toEm(600)) {
+         // flex-direction: column;
+         flex-wrap: wrap;
+         padding: 0;
+         &:not(:last-child) {
+            border-bottom: 1px solid $mainTextColor;
+         }
+         .menu-catalog-has-open-value & {
+            &:first-child {
+               border-radius: 0;
+            }
+            &:last-child {
+               border-radius: 0;
+            }
+         }
+         &.active-catalog {
+            // background-color: $accentColor;
+         }
+      }
+
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $accentColorHover;
+            .catalog-menu__sub-list {
+               visibility: visible;
+               height: auto;
+            }
+            .catalog-menu__name {
+               &::before {
+                  color: $mainTextColor;
+               }
+            }
+         }
+      }
+      @media (max-width: toEm(600)) {
+         @media (any-hover: hover) {
+            &:hover {
+               .catalog-menu__sub-list {
+                  visibility: visible;
+                  height: 100%;
+               }
+            }
+         }
+      }
+   }
+   &__name {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      font-size: toRem(20);
+      gap: toRem(10);
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      &::before {
+         color: $accentColor;
+         font-size: toRem(12);
+         transition: all 0.3s;
+      }
+      .active-catalog & {
+         &::before {
+            color: $mainTextColor;
+         }
+      }
+      @media (max-width: toEm(600)) {
+         // padding: toRem(5) toRem(30);
+         font-size: toRem(22);
+         &::before {
+            transform: rotate(90deg);
+         }
+         .active-catalog & {
+            // background-color: $accentColor;
+            margin-bottom: toRem(5);
+            &::before {
+               transform: rotate(270deg);
+            }
+         }
+      }
+   }
+
+   &__sub-list {
+      .menu-catalog-has-open-value & {
+         border-left: 2px solid $accentColor;
+      }
+      @media (max-width: toEm(600)) {
+         width: 100%;
+         flex-grow: 1;
+         .menu-catalog-has-open-value & {
+            border-left: none;
+            border-radius: 0;
+            padding: toRem(5) toRem(30);
+         }
+      }
+      border-radius: 0 toRem(8) toRem(8) 0;
+      padding: toRem(18) toRem(30);
+      visibility: hidden;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 100%;
+      //   height: 100%;
+      background-color: $mainBGColor;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(15);
+
+      font-size: toRem(20);
+      font-weight: 400;
+      @media (max-width: toEm(600)) {
+         position: relative;
+         left: 0;
+         // display: none;
+         padding: 0;
+         height: 0;
+      }
+   }
+
+   &__sub-item {
+   }
+
+   &__sub-link {
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            color: $accentColor;
+         }
+      }
+   }
+}
+
+#catalog-container {
+   display: none;
+   .open-catalog-menu & {
+      display: block;
+   }
+}

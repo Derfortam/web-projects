@@ -1,0 +1,60 @@
+.payment-list {
+   padding: toRem(70) 0;
+   background-color: $mainBGColor;
+   &__item {
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+   }
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(35);
+   }
+
+   &__icon {
+      max-width: toRem(100);
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      background-color: $accentColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+         max-width: toRem(50);
+         width: 100%;
+         object-fit: cover;
+      }
+      &--size {
+         img {
+            max-width: toRem(70);
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(15);
+   }
+
+   &__name {
+      font-size: toRem(26);
+      font-weight: 600;
+   }
+
+   &__text {
+      p {
+         font-size: toRem(16);
+         font-weight: 400;
+         line-height: 1.4;
+         &:not(:last-child) {
+            margin-bottom: toRem(10);
+         }
+      }
+   }
+}

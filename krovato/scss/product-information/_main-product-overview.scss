@@ -1,0 +1,470 @@
+.main-product-overview {
+   display: flex;
+   align-items: center;
+   gap: toRem(30);
+   min-width: 0;
+
+   &__main-product {
+      flex: 1 1 50%;
+   }
+
+   &__info-about {
+      flex: 1 1 50%;
+   }
+   &--margin {
+      margin-bottom: toRem(45);
+   }
+}
+
+.info-about-product {
+   & > *:last-child {
+      margin-bottom: 0;
+   }
+   &__title {
+      font-size: toRem(40);
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: toRem(30);
+      @media (max-width: toEm(797)) {
+         font-size: toRem(26);
+         margin-bottom: toRem(15);
+      }
+   }
+
+   &__details {
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: toRem(30);
+   }
+
+   &__availability {
+      font-size: toRem(14);
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      gap: toRem(5);
+      &::before {
+         color: green;
+         font-size: toRem(20);
+      }
+   }
+
+   &__raiting {
+      display: inline-flex;
+      gap: toRem(4);
+   }
+
+   &__star-raiting {
+      aspect-ratio: 20 / 19;
+      width: toRem(20);
+      height: toRem(19);
+      object-fit: cover;
+   }
+
+   &__comments {
+      color: $fifthhColor;
+      font-size: toRem(17);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: toRem(5);
+   }
+
+   &__model {
+      font-size: toRem(17);
+      font-weight: 400;
+      color: $fifthhColor;
+   }
+
+   &__body {
+      background-color: $mainBGColor;
+      border-radius: toRem(8);
+      padding: toRem(20);
+      box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+   }
+
+   &__cost {
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+      flex-wrap: wrap;
+      justify-content: space-between;
+      min-width: 0;
+      width: 100%;
+      padding-bottom: toRem(20);
+      border-bottom: 2px solid $fourthColor;
+      @media (max-width: toEm(797)) {
+         flex-direction: column;
+      }
+   }
+
+   &__prices {
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      flex-wrap: wrap;
+      row-gap: toRem(10);
+      @media (max-width: toEm(797)) {
+         flex-direction: column;
+      }
+   }
+
+   &__new-price {
+      font-size: toRem(30);
+      font-weight: 600;
+      line-height: 1.3;
+   }
+
+   &__old-price {
+      font-size: toRem(20);
+      font-weight: 600;
+      color: rgba(224, 61, 61, 1);
+      line-height: 1.3;
+      text-decoration: line-through;
+   }
+
+   &__to-favourite {
+      max-width: toRem(150);
+      width: 100%;
+      //   flex-grow: 1;
+      //   justify-content: flex-end;
+      //   color: $fourthColor;
+      font-size: toRem(19);
+      font-weight: 600;
+      line-height: 1.2;
+      display: inline-flex;
+      min-width: 0;
+      align-items: center;
+      gap: toRem(6);
+      //   width: 100%;
+      //   white-space: nowrap;
+
+      &::before {
+         //  flex-shrink: 0;
+         //  max-width: toRem(50);
+         flex: 0 0 toRem(50);
+         aspect-ratio: 1 / 1;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: $fourthColor;
+         border-radius: 50%;
+         font-size: toRem(22);
+         transition: transform 0.3s;
+      }
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            color: $secondColor;
+            &::before {
+               transform: scale(1.1);
+            }
+         }
+      }
+   }
+
+   &__refinements {
+      flex-wrap: wrap;
+      padding-top: toRem(30);
+      display: flex;
+      align-items: center;
+      gap: toRem(30);
+      margin-bottom: toRem(20);
+   }
+
+   &__label-refinement {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+      span {
+         display: flex;
+         align-items: center;
+         gap: toRem(8);
+         &::before {
+            font-size: toRem(20);
+            color: $secondColor;
+         }
+      }
+   }
+
+   &__options {
+      position: relative;
+      flex-grow: 1;
+   }
+
+   &__select {
+      border-radius: toRem(8);
+      width: 100%;
+      background-color: transparent;
+      appearance: none; /* For modern browsers */
+      -moz-appearance: none; /* For Firefox */
+      -webkit-appearance: none; /* For Safari and Chrome */
+      font-size: toRem(16);
+      font-weight: 400;
+      color: $fifthhColor;
+      background-color: rgba(248, 248, 248, 1);
+      padding: toRem(10) toRem(40) toRem(10) toRem(10);
+      &::-ms-expand {
+         display: none; /* Приховування стрілки в Internet Explorer */
+      }
+      &::-ms-expand {
+         display: none;
+      }
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+         -webkit-appearance: none;
+         margin: 0;
+      }
+   }
+
+   &__custom-button {
+      position: absolute;
+      right: toRem(10);
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: toRem(10);
+      height: toRem(10);
+      pointer-events: none;
+      &::before {
+         transform: rotate(-90deg);
+         transition: transform 0.3s;
+      }
+      &.active {
+         &::before {
+            transform: rotate(90deg);
+         }
+      }
+   }
+
+   &__cloth {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+      margin-bottom: toRem(30);
+   }
+
+   &__name {
+      font-size: toRem(17);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: toRem(5);
+      &::before {
+         font-size: toRem(20);
+         color: $secondColor;
+      }
+   }
+
+   &__wrapper-cloth {
+      //   display: flex;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: toRem(20);
+      //   flex-wrap: wrap;
+      //   justify-content: space-between;
+   }
+
+   &__label {
+      position: relative;
+      max-width: toRem(70);
+
+      aspect-ratio: 1 /1;
+      width: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      //   width: toRem(70);
+      //   @media (max-width: toEm(797)) {
+      //      width: toRem(45);
+      //   }
+      display: block;
+      input {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         left: 0;
+         top: 0;
+         z-index: 3;
+         opacity: 0;
+      }
+
+      &.active-texture {
+         border: 4px solid $accentColor;
+         &::before {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 6;
+            font-size: toRem(40);
+            color: $accentColor;
+            font-family: "icons";
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\e908";
+            display: block;
+         }
+      }
+   }
+   &__img-cloth {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      object-fit: cover;
+   }
+
+   &__show-more {
+      color: $accentColor;
+      font-size: toRem(17);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: toRem(6);
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      &::before {
+         font-size: toRem(14);
+         transform: rotate(180deg);
+      }
+
+      transition: color 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            // transform: scale(1.1);
+            // text-decoration: underline;
+            color: $accentColorHover;
+         }
+      }
+      &:disabled {
+         color: $fifthhColor;
+      }
+      @media (max-width: toEm(600)) {
+         align-self: center;
+      }
+   }
+
+   &__actions {
+      display: flex;
+      align-items: center;
+      gap: toRem(30);
+      justify-content: space-between;
+      @media (max-width: toEm(797)) {
+         flex-wrap: wrap;
+         gap: toRem(15);
+         & > * {
+            flex-grow: 1;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+         }
+      }
+   }
+
+   &__product-count {
+      display: inline-flex;
+      align-items: center;
+      background-color: $secondAccentColor;
+      border-radius: toRem(8);
+      border: 1px solid $secondColor;
+   }
+
+   &__change-count {
+      padding: toRem(17) toRem(15) toRem(17) toRem(20);
+      font-size: toRem(24);
+      font-weight: 600;
+      &--mirror {
+         padding: toRem(17) toRem(20) toRem(17) toRem(15);
+      }
+   }
+
+   &__count-of-products {
+      font-size: toRem(20);
+      font-weight: 600;
+   }
+
+   &__buy {
+      background-color: $accentColor;
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+      font-size: toRem(19);
+      font-weight: 600;
+      padding: toRem(13) toRem(40);
+      color: $mainBGColor;
+      border-radius: toRem(8);
+      transition: all 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            transform: scale(1.1);
+            background-color: $fourthColor;
+         }
+      }
+
+      &::before {
+         font-size: toRem(22);
+      }
+
+      &--bg {
+         background-color: transparent;
+         border: 2px solid $accentColor;
+         color: $mainTextColor;
+         padding: toRem(13) toRem(20);
+         &::before {
+            color: $accentColor;
+         }
+      }
+   }
+
+   &__other {
+      padding: toRem(15) 0;
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media (max-width: toEm(797)) {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__tel {
+      color: rgba(177, 177, 177, 1);
+      font-size: toRem(20);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      &::before {
+         font-size: toRem(22);
+      }
+   }
+
+   &__buy-in-touch {
+      font-size: toRem(19);
+      font-weight: 600;
+      padding: toRem(13) toRem(30);
+      line-height: 1.2;
+      border-radius: toRem(8);
+      border: 1px solid $fifthhColor;
+      color: $fifthhColor;
+      transition: background-color 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $thirdColor;
+         }
+      }
+   }
+}

@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ua">
+<!-- zxx -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Krovato</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__navigation navigation-header">
+                <div class="navigation-header__container">
+                    <!--
+                     <button class="navigation-header__burger">
+                        <span></span>
+                    </button> 
+                    -->
+                    <nav class="navigation-header__menu">
+                        <ul class="navigation-header__list-menu">
+                            <li class="navigation-header__item-menu">
+                                <a href="#" class="navigation-header__link-menu">Про нас</a>
+                            </li>
+                            <li class="navigation-header__item-menu">
+                                <a href="#" class="navigation-header__link-menu">Оплата</a>
+                            </li>
+                            <li class="navigation-header__item-menu">
+                                <a href="#" class="navigation-header__link-menu">Доставка та збірка</a>
+                            </li>
+                            <li class="navigation-header__item-menu">
+                                <a href="#" class="navigation-header__link-menu">Відгуки</a>
+                            </li>
+                            <li class="navigation-header__item-menu">
+                                <a href="#" class="navigation-header__link-menu">Блог</a>
+                            </li>
+                            <li class="navigation-header__item-menu">
+                                <a href="#" class="navigation-header__link-menu">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="navigation-header__other">
+                        <h4 class="navigation-header__info">Допомога та консультація:</h4>
+                        <div class="navigation-header__media">
+                            <a href="#" class="navigation-header__link-media">
+                                <img src="img/header/whatsapp.svg" alt="wtatsapp" class="navigation-header__icon-media">
+                            </a>
+                            <a href="#" class="navigation-header__link-media">
+                                <img src="img/header/telegram.svg" alt="telegram" class="navigation-header__icon-media">
+                            </a>
+                            <a href="#" class="navigation-header__link-media">
+                                <img src="img/header/viber.svg" alt="viber" class="navigation-header__icon-media">
+                            </a>
+                        </div>
+                        <div class="navigation-header__lang">
+                            <select name="language" id="language" class="navigation-header__select ">
+                                <option value="UA">UA</option>
+                                <option value="EN">EN</option>
+                            </select>
+                            <button class="navigation-header__custom-button icon-slide-left"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__actions actions-header">
+                <div class="actions-header__container">
+                    <a href="index.html" class="actions-header__logo" id="logo"> <img src="img/header/logo.svg"
+                            alt="logo"></a>
+                    <button id="catalog" class="actions-header__catalog-button icon-menu-catalog">Каталог</button>
+                    <div id="search" class="actions-header__search icon-search">
+                        <input type="search" placeholder="Пошук товарів">
+                    </div>
+                    <a id="tel" href="tel:+380679294545" class="actions-header__phone">
+                        <div class="actions-header__phone-icon icon-tel"></div>
+                        <div class="actions-header__phone-info">
+                            <h5 class="actions-header__name">Щодня з 9:00 до 18:00</h5>
+                            <div class="actions-header__number-phone">067 929-45-45</div>
+                        </div>
+                    </a>
+                    <div id="otherAct" class="actions-header__other-act">
+                        <a href="#" class="actions-header__favourites icon-heart"></a>
+                        <a href="basket.html" class="actions-header__favourites icon-backet"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom bottom-header">
+                <div class="bottom-header__container">
+                    <ul class="bottom-header__info">
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info icon-full-star">Акції</a>
+                        </li>
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info icon-sale">Розпродаж</a>
+                        </li>
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info icon-credit">Купити в кредит</a>
+                        </li>
+                    </ul>
+
+                    <ul class="bottom-header__info">
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info ">Дитяча</a>
+                        </li>
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info ">Кухня</a>
+                        </li>
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info ">Ванна</a>
+                        </li>
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info ">Спальня</a>
+                        </li>
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info ">Передпокій</a>
+                        </li>
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info ">Вітальня</a>
+                        </li>
+                        <li class="bottom-header__item-info">
+                            <a href="#" class="bottom-header__link-info ">Офіс</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="catalog-container" class="header__container">
+                <div class="catalog-menu">
+                    <ul class="catalog-menu__list">
+                        <li class="catalog-menu__item">
+                            <div class="catalog-menu__content">
+                                <img src="img/header/categories-icons/lizhka.svg" alt="icon" class="catalog-menu__icon">
+                                <h5 class="catalog-menu__name icon-slide-right">Ліжка</h5>
+                            </div>
+                            <ul class="catalog-menu__sub-list">
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Односпальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Футони
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци Економ
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Дитячі матраци
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <div class="catalog-menu__content">
+                                <img src="img/header/categories-icons/matratsy.svg" alt="icon"
+                                    class="catalog-menu__icon">
+                                <h5 class="catalog-menu__name icon-slide-right">Матраци</h5>
+                            </div>
+                            <ul class="catalog-menu__sub-list">
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Односпальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Двоспальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Пружинний блок Bonnel
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Пружинний блок Pocket Spring
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Безпружинні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци з ефектом Зима-Літо
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Футони
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци Економ
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Дитячі матраци
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <div class="catalog-menu__content">
+                                <img src="img/header/categories-icons/mebly.svg" alt="icon" class="catalog-menu__icon">
+                                <h5 class="catalog-menu__name icon-slide-right">М’які меблі</h5>
+                            </div>
+                            <ul class="catalog-menu__sub-list">
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Односпальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Двоспальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Пружинний блок Bonnel
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Пружинний блок Pocket Spring
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Безпружинні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци з ефектом Зима-Літо
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Футони
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци Економ
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Дитячі матраци
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <div class="catalog-menu__content">
+                                <img src="img/header/categories-icons/shafy.svg" alt="icon" class="catalog-menu__icon">
+                                <h5 class="catalog-menu__name icon-slide-right">Шафи</h5>
+                            </div>
+                            <ul class="catalog-menu__sub-list">
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Односпальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Двоспальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Пружинний блок Bonnel
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Пружинний блок Pocket Spring
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Безпружинні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци з ефектом Зима-Літо
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Футони
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци Економ
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Дитячі матраци
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <div class="catalog-menu__content">
+                                <img src="img/header/categories-icons/komod.svg" alt="icon" class="catalog-menu__icon">
+                                <h5 class="catalog-menu__name icon-slide-right">Комоди</h5>
+                            </div>
+                            <ul class="catalog-menu__sub-list">
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Односпальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Двоспальні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Пружинний блок Bonnel
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Пружинний блок Pocket Spring
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Безпружинні матраци
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци з ефектом Зима-Літо
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Футони
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Матраци Економ
+                                    </a>
+                                </li>
+                                <li class="catalog-menu__sub-item">
+                                    <a href="#" class="catalog-menu__sub-link"> Дитячі матраци
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="page__path path-page">
+                <div class="path-page__container">
+                    <a href="index.html" class="path-page__link">Головна</a>
+                    <a href="#" class="path-page__link path-page__link--active">Ліжка</a>
+                </div>
+            </div>
+            <div class="page__subcategories subcategories subcategories--margin">
+                <div class="subcategories__container">
+                    <h2 class="subcategories__title">Ліжка <span id="subcategories-total-sum">1 147 товарів</span></h2>
+                    <div class="subcategories__wrapper">
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">Односпальні ліжка</h4>
+                            <img src="img/page/products-catalog/subcategories/img1.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">Двоспальні ліжка</h4>
+                            <img src="img/page/products-catalog/subcategories/img2.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">Диван-ліжко</h4>
+                            <img src="img/page/products-catalog/subcategories/img3.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">Дерев'яні ліжка</h4>
+                            <img src="img/page/products-catalog/subcategories/img4.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">Металеві ліжка</h4>
+                            <img src="img/page/products-catalog/subcategories/img5.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">М'які ліжка</h4>
+                            <img src="img/page/products-catalog/subcategories/img6.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">М'які ліжка</h4>
+                            <img src="img/page/products-catalog/subcategories/img6.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">М'які ліжка</h4>
+                            <img src="img/page/products-catalog/subcategories/img6.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+                        <a href="#" class="subcategories__block">
+                            <h4 class="subcategories__name">М'які ліжка</h4>
+                            <img src="img/page/products-catalog/subcategories/img6.png" alt="subcategories product"
+                                class="subcategories__image">
+                        </a>
+
+                        <button id="showSubcategories" class="subcategories__button icon-double-arrows">Приховати
+                            підкатегорії </button>
+                    </div>
+                </div>
+            </div>
+            <div class="page__products-categiries categiries-products categiries-products--margin">
+                <div class="categiries-products__container">
+                    <aside class="categiries-products__filter filter-products">
+                        <h4 class="filter-products__main-title"><span class="line"></span>Фільтр пошуку </h4>
+                        <div class="filter-products__wrapper">
+                            <div class="filter-products__block open">
+                                <h5 class="filter-products__title">Ціна, грн</h5>
+                                <div class="filter-products__body filter-products__body--flex">
+                                    <div class="filter-products__inputs">
+                                        <input type="text" id="filter-products-slider-from">
+                                        <input type="text" id="filter-products-slider-to">
+                                        <button class="filter-products__price-ok">Ok</button>
+                                        <!-- <div id="filter-products-slider-to">0</div> -->
+                                    </div>
+
+                                    <div class="filter-products__slider" id="filter-products-slider"></div>
+                                </div>
+                            </div>
+                            <div class="filter-products__block open">
+                                <h5 class="filter-products__title">Наявність</h5>
+                                <div class="filter-products__body">
+                                    <div class='ilter-products__custom-input custom-input'>
+                                        <input id='inStock' type='checkbox' class='custom-input__checkbox'>
+                                        <label for='inStock' class='custom-input__block-checkbox'>
+                                            В наявності
+                                        </label>
+                                    </div>
+                                    <div class='ilter-products__custom-input custom-input'>
+                                        <input id='inOrder' type='checkbox' class='custom-input__checkbox'>
+                                        <label for='inOrder' class='custom-input__block-checkbox'>
+                                            Під замовлення
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-products__block open">
+                                <h5 class="filter-products__title">Виробник</h5>
+                                <div class="filter-products__body">
+                                    <div class="filter-products__enter-point"
+                                        id="filter-products-manufactures-enter-point"></div>
+                                    <button id="filterShowMoreManufacturer" class="filter-products__show-more">Показати
+                                        більше</button>
+                                </div>
+                            </div>
+
+                            <div class="filter-products__block open">
+                                <h5 class="filter-products__title">Тип ліжка</h5>
+                                <div class="filter-products__body">
+                                    <div class="filter-products__enter-point" id="filter-products-type-enter-point">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-products__block">
+                                <h5 class="filter-products__title">Розмір спального місця</h5>
+                                <div class="filter-products__body">
+                                    <div class="filter-products__enter-point" id="filter-products-bed-size-enter-point">
+                                    </div>
+                                    <button id="filterShowMoreBedSize" class="filter-products__show-more">Показати
+                                        більше</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </aside>
+                    <div class="categiries-products__main-content-wrapper">
+                        <div class="categiries-products__body categiries-products__body--margin">
+                            <div class="categiries-products__titling">
+                                <div class="categiries-products__up">
+                                    <h3 class="categiries-products__title">Ви вибрали:</h3>
+                                    <div class="categiries-products__sorting icon-sorting">
+                                        Сортування:
+                                        <div class="categiries-products__wrapper-select">
+                                            <select name="select-categories-product" id="select-categories-product"
+                                                class="categiries-products__select ">
+                                                <option value="За зростанням ціни">За зростанням ціни</option>
+                                                <option value="За зменшенням ціни">За зменшенням ціни</option>
+                                                <!-- <option value="За зменшенням ціни">За зменшеннfriv u9vf fdvue8rbv ufd vyeям -->
+                                                ціни</option>
+
+                                            </select>
+                                            <button class="categiries-products__custom-button icon-slide-left"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categiries-products__down">
+                                    <span class="categiries-products__categories-sign active">Очистити
+                                        <img src="img/page/icons/close.svg" alt="close"
+                                            class="categiries-products__close-icon"></span>
+                                    <span class="categiries-products__categories-sign">Ціна: 1195-9556 <img
+                                            src="img/page/icons/close.svg" alt="close"
+                                            class="categiries-products__close-icon"></span>
+                                    <span class="categiries-products__categories-sign">В наявності <img
+                                            src="img/page/icons/close.svg" alt="close"
+                                            class="categiries-products__close-icon"></span>
+                                    <span class="categiries-products__categories-sign">Виробник: Corners <img
+                                            src="img/page/icons/close.svg" alt="close"
+                                            class="categiries-products__close-icon"></span>
+                                </div>
+                            </div>
+                            <div class="categiries-products__products">
+                                <div id="product-wrapper" class="categiries-products__wrapper">
+                                    <!-- <div class="full-product-card ">
+                                    <img src="img/page/products/img.jpg" alt="product-image"
+                                        class="full-product-card__image">
+                                    <div class="full-product-card__info">
+                                        <span class="full-product-card__sizes">Розмір: 61 x 184 x 2130 мм
+                                        </span>
+                                        <h4 class="full-product-card__title">Ліжко Спарта / Sparta з підйомним
+                                            механізмом </h4>
+                                        <h6
+                                            class="full-product-card__status full-product-card__status--in-stock icon-check">
+                                            В наявності
+                                        </h6>
+                                    </div>
+                                    <div class="full-product-card__actions">
+                                        <div class="full-product-card__prices">
+                                            <span class="full-product-card__old-price">155 400 грн.</span>
+                                            <span class="full-product-card__new-price">150 400 грн.</span>
+                                        </div>
+                                        <div class="full-product-card__buttons">
+                                            <button class="full-product-card__favourite icon-heart"></button>
+                                            <button class="full-product-card__basket icon-backet"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="full-product-card ">
+                                    <img src="img/page/products/img.jpg" alt="product-image"
+                                        class="full-product-card__image">
+                                    <div class="full-product-card__info">
+                                        <span class="full-product-card__sizes">Розмір: 61 x 184 x 2130 мм
+                                        </span>
+                                        <h4 class="full-product-card__title">Ліжко Спарта / Sparta з підйомним
+                                            механізмом </h4>
+                                        <h6
+                                            class="full-product-card__status full-product-card__status--in-stock icon-check">
+                                            В наявності
+                                        </h6>
+                                    </div>
+                                    <div class="full-product-card__actions">
+                                        <div class="full-product-card__prices">
+                                            <span class="full-product-card__old-price">155 400 грн.</span>
+                                            <span class="full-product-card__new-price">150 400 грн.</span>
+                                        </div>
+                                        <div class="full-product-card__buttons">
+                                            <button class="full-product-card__favourite icon-heart"></button>
+                                            <button class="full-product-card__basket icon-backet"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="full-product-card ">
+                                    <img src="img/page/products/img.jpg" alt="product-image"
+                                        class="full-product-card__image">
+                                    <div class="full-product-card__info">
+                                        <span class="full-product-card__sizes">Розмір: 61 x 184 x 2130 мм
+                                        </span>
+                                        <h4 class="full-product-card__title">Ліжко Спарта / Sparta з підйомним
+                                            механізмом </h4>
+                                        <h6
+                                            class="full-product-card__status full-product-card__status--in-stock icon-check">
+                                            В наявності
+                                        </h6>
+                                    </div>
+                                    <div class="full-product-card__actions">
+                                        <div class="full-product-card__prices">
+                                            <span class="full-product-card__old-price">155 400 грн.</span>
+                                            <span class="full-product-card__new-price">150 400 грн.</span>
+                                        </div>
+                                        <div class="full-product-card__buttons">
+                                            <button class="full-product-card__favourite icon-heart"></button>
+                                            <button class="full-product-card__basket icon-backet"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="full-product-card ">
+                                    <img src="img/page/products/img.jpg" alt="product-image"
+                                        class="full-product-card__image">
+                                    <div class="full-product-card__info">
+                                        <span class="full-product-card__sizes">Розмір: 61 x 184 x 2130 мм
+                                        </span>
+                                        <h4 class="full-product-card__title">Ліжко Спарта / Sparta з підйомним
+                                            механізмом </h4>
+                                        <h6
+                                            class="full-product-card__status full-product-card__status--in-stock icon-check">
+                                            В наявності
+                                        </h6>
+                                    </div>
+                                    <div class="full-product-card__actions">
+                                        <div class="full-product-card__prices">
+                                            <span class="full-product-card__old-price">155 400 грн.</span>
+                                            <span class="full-product-card__new-price">150 400 грн.</span>
+                                        </div>
+                                        <div class="full-product-card__buttons">
+                                            <button class="full-product-card__favourite icon-heart"></button>
+                                            <button class="full-product-card__basket icon-backet"></button>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                </div>
+                                <div class="categiries-products__navigation">
+                                    <button id="show-more-products"
+                                        class="categiries-products__show-more icon-saving-more">Показати ще
+                                        товари</button>
+                                    <div class="categiries-products__pages" id="nav-pages">
+                                        <!-- <button class="categiries-products__nav-button icon-slide-left"
+                                        id="categiries-products-prev"></button>
+                                    <div id="products-pages" class="categiries-products__all-pages"></div>
+                                    <button class="categiries-products__nav-button icon-slide-right"
+                                        id="categiries-products-next"></button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show-more categiries-products__show-more-text ">
+                            <!-- <div class="show-more__container"> -->
+                            <h2 class="show-more__title">Як правильно обрати ліжко?
+                            </h2>
+                            <div id="show-more-text" class="show-more__text">
+                                <p>При виборі ліжка в інтернет магазині Вам в першу чергу потрібно вибрати матеріал.
+                                    Найбільшою популярністю користуються дерев'яні ліжка, виготовлені з вільхи, ясена чи
+                                    дуба. Такі моделі чудово прикрасять Вашу спальню у квартирі чи приватному будинку.
+                                    Для орендованих квартир, під здачу, більше підійде ліжко з металу, так як воно
+                                    просто «не вбивається», а також має дуже демократичну ціну.
+                                    Для Вашої зручності ліжко може комплектуватись висувними ящиками або підйомним
+                                    механізмом. Ящики можуть бути з одного боку ліжка або з двох. Також є моделі, з
+                                    висувними ящиками спереду. Ліжка з підйомним механізмом, це відмінне рішення, для
+                                    невеликих кімнат, вони дозволяють заощадити простір і мають велику нішу для
+                                    зберігання постільної білизни. Всі дерев'яні ліжка комплектуються буковими ламелями.
+                                    Спальне місце з ламельною основою може витримувати навантаження до 150 кг на одне
+                                    спальне місце. Відстань між ламелями, у своїй має бути 2,5-3 див.
+
+                                    Кожне ліжко може бути забарвлене у різні кольори: чорні, білі, сірі, венге, у
+                                    кольорі горіх. Завдяки цьому ліжко можна підібрати під будь-який інтер'єр.
+                                </p>
+                                <p> Ми співпрацюємо тільки з найкращими вітчизняними та зарубіжними фабриками та
+                                    компаніями, які
+                                    отримали визнання покупців та експертів меблевої справи. Для нас важливо, щоб
+                                    товар, який ми
+                                    продаємо, відповідав міжнародним стандартам якості, був із сертифікованих
+                                    матеріалів –
+                                    довговічних, красивих та екологічно чистих. Ми з особливою ретельністю
+                                    відбираємо пропозиції
+                                    для магазину, тому можемо поручитися за їхню якість і впевнено рекомендувати
+                                    клієнтам. У нас
+                                    ви легко знайдете меблеві серії в класичному та модерному стилі, лінійки для
+                                    оформлення
+                                    житла в дусі романтики або скандинавського лаконізму.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat expedita autem,
+                                    totam
+                                    suscipit a quam architecto. Ullam ut tempore dolorem consequatur alias est
+                                    debitis numquam!
+                                    A et magnam veniam? Qui?
+                                    Iusto quod veritatis asperiores voluptas, corporis ut similique deleniti odio
+                                    omnis
+                                    doloribus fuga. Corrupti perferendis temporibus quae ullam eligendi? Velit
+                                    laboriosam
+                                    dolorem adipisci aliquam porro ad repellat tenetur quidem voluptas?
+                                    Earum, eius. Sunt quibusdam, voluptatem cumque reiciendis quo consequatur?
+                                    Architecto
+                                    laborum dicta deserunt dolor modi praesentium a. A impedit quod ullam cum
+                                    excepturi tenetur
+                                    temporibus alias illo hic! Numquam, labore.
+                                    Perspiciatis vel alias accusantium sunt commodi, illum repellat neque nisi, iste
+                                    adipisci
+                                    veritatis iure quasi est, tenetur hic maxime corrupti asperiores excepturi!
+                                    Facilis sed est
+                                    alias pariatur ex voluptatum dolorem.
+                                    Quos asperiores facilis voluptatum maxime consectetur eius ipsa possimus
+                                    voluptatem ut vitae
+                                    quia explicabo nihil labore, doloribus in nisi nulla aperiam nam pariatur
+                                    maiores ratione
+                                    tempora expedita dolorum cum? Totam?</p>
+                                <p> Ми співпрацюємо тільки з найкращими вітчизняними та зарубіжними фабриками та
+                                    компаніями, які
+                                    отримали визнання покупців та експертів меблевої справи. Для нас важливо, щоб
+                                    товар, який ми
+                                    продаємо, відповідав міжнародним стандартам якості, був із сертифікованих
+                                    матеріалів –
+                                    довговічних, красивих та екологічно чистих. Ми з особливою ретельністю
+                                    відбираємо пропозиції
+                                    для магазину, тому можемо поручитися за їхню якість і впевнено рекомендувати
+                                    клієнтам. У нас
+                                    ви легко знайдете меблеві серії в класичному та модерному стилі, лінійки для
+                                    оформлення
+                                    житла в дусі романтики або скандинавського лаконізму.</p>
+                            </div>
+                            <button id="show-more-button" class="show-more__button"><img src="img/page/icons/arrow.svg"
+                                    alt="arrow"></button>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__feedbacks feedbacks feedbacks--margin">
+                <div class="feedbacks__container">
+                    <div class="feedbacks__titling">
+                        <h3 class="feedbacks__title">Останні відгуки</h3>
+                        <div class="feedbacks__info">
+                            <img src="img/page/icons/mini-logo.svg" alt="icon-logo" class="feedbacks__icon">
+                            <div class="feedbacks__datails">
+                                <h5 class="feedbacks__sub-title">Магазин меблів для дому "KROVATO"</h5>
+                                <div class="feedbacks__rating">
+                                    <span id="rating">5.0</span>
+                                    <div class="feedbacks__stars">
+                                        <img src="img/page/icons/full-star.svg" alt="star">
+                                        <img src="img/page/icons/full-star.svg" alt="star">
+                                        <img src="img/page/icons/full-star.svg" alt="star">
+                                        <img src="img/page/icons/full-star.svg" alt="star">
+                                        <img src="img/page/icons/full-star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="feedbacks__rewiews">
+                                    Базовано на відгуках: <span id="total-rewiews">269</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedbacks__actions">
+                            <button class="feedbacks__button feedbacks__button--bg-color"> <img
+                                    src="img/page/icons/write.svg" alt="write"> Написати
+                                відгук</button>
+                            <button class="feedbacks__button "> <img src="img/page/icons/comment.svg" alt="write">
+                                Всі
+                                відгуки</button>
+                        </div>
+                    </div>
+                    <div class="feedbacks__feedback feedback">
+                        <input id="feedback-range" step="1" value="0" min="0" max="100" type="range"
+                            class="feedback__range">
+                        <div class="feedback__body">
+                            <div class="feedback__block">
+                                <div class="feedback__top">
+                                    <div class="feedback__icon">
+                                        <img src="img/page/icons/user.svg" alt="user">
+                                    </div>
+                                    <div class="feedback__user">
+                                        <div class="feedback__name">Іван Стедниця</div>
+                                        <div class="feedback__rating">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="feedback__date">25.01.2024</div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod esse aliquid
+                                        delectus
+                                        eveniet sequi deserunt repellendus accusantium dolores asperiores animi ipsum
+                                        commodi
+                                        beatae alias repellat, earum autem porro quos eos.
+                                        Perferendis eius cumque voluptatum pariatur nisi assumenda accusamus nemo,
+                                        eligendi
+                                        est
+                                        architecto at sapiente ut unde numquam autem velit nam optio saepe neque
+                                        possimus
+                                        et!
+                                        Nisi fugit doloremque temporibus consectetur.
+                                        Recusandae libero perspiciatis exercitationem, expedita possimus sit officiis
+                                        explicabo?
+                                        Error fuga est rem non soluta fugiat amet, fugit id eligendi exercitationem
+                                        aliquam
+                                        pariatur ad, quia commodi necessitatibus. Nisi, tempore fugiat.
+                                        Voluptatibus reprehenderit doloremque ducimus sint asperiores commodi ea aut,
+                                        nisi
+                                        hic
+                                        et vel, rem corporis modi ipsum maxime cum placeat similique amet maiores illum
+                                        sit!
+                                        Necessitatibus accusamus cum dicta perferendis?</p>
+                                </div>
+                                <div class="feedback__bottom">
+                                    <img src="img/page/products/img1.jpg" alt="product" class="feedback__product">
+                                    <h5 class="feedback__name-product">Диван Orange-Line Родео SF wcbwuefw cuwef
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="feedback__block">
+                                <div class="feedback__top">
+                                    <div class="feedback__icon">
+                                        <img src="img/page/icons/user.svg" alt="user">
+                                    </div>
+                                    <div class="feedback__user">
+                                        <div class="feedback__name">Роман Кучер</div>
+                                        <div class="feedback__rating">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="feedback__date">28.01.2024</div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod esse aliquid
+                                        delectus
+                                        eveniet sequi deserunt repellendus accusantium dolores asperiores animi ipsum
+                                        commodi
+                                        beatae alias repellat, earum autem porro quos eos.
+                                        Perferendis eius cumque voluptatum pariatur nisi assumenda accusamus nemo,
+                                        eligendi
+                                        est
+                                        architecto at sapiente ut unde numquam autem velit nam optio saepe neque
+                                        possimus
+                                        et!
+                                        Nisi fugit doloremque temporibus consectetur.
+                                        Recusandae libero perspiciatis exercitationem, expedita possimus sit officiis
+                                        explicabo?
+                                        Error fuga est rem non soluta fugiat amet, fugit id eligendi exercitationem
+                                        aliquam
+                                        pariatur ad, quia commodi necessitatibus. Nisi, tempore fugiat.
+                                        Voluptatibus reprehenderit doloremque ducimus sint asperiores commodi ea aut,
+                                        nisi
+                                        hic
+                                        et vel, rem corporis modi ipsum maxime cum placeat similique amet maiores illum
+                                        sit!
+                                        Necessitatibus accusamus cum dicta perferendis?</p>
+                                </div>
+                                <div class="feedback__bottom">
+                                    <img src="img/page/products/img2.jpg" alt="product" class="feedback__product">
+                                    <h5 class="feedback__name-product">Матрац ARGENTUM AMALTEA / Аргентум Амалті
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="feedback__block">
+                                <div class="feedback__top">
+                                    <div class="feedback__icon">
+                                        <img src="img/page/icons/user.svg" alt="user">
+                                    </div>
+                                    <div class="feedback__user">
+                                        <div class="feedback__name">Іван Стедниця</div>
+                                        <div class="feedback__rating">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="feedback__date">25.01.2024</div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod esse aliquid
+                                        delectus
+                                        eveniet sequi deserunt repellendus accusantium dolores asperiores animi ipsum
+                                        commodi
+                                        beatae alias repellat, earum autem porro quos eos.
+                                        Perferendis eius cumque voluptatum pariatur nisi assumenda accusamus nemo,
+                                        eligendi
+                                        est
+                                        architecto at sapiente ut unde numquam autem velit nam optio saepe neque
+                                        possimus
+                                        et!
+                                        Nisi fugit doloremque temporibus consectetur.
+                                        Recusandae libero perspiciatis exercitationem, expedita possimus sit officiis
+                                        explicabo?
+                                        Error fuga est rem non soluta fugiat amet, fugit id eligendi exercitationem
+                                        aliquam
+                                        pariatur ad, quia commodi necessitatibus. Nisi, tempore fugiat.
+                                        Voluptatibus reprehenderit doloremque ducimus sint asperiores commodi ea aut,
+                                        nisi
+                                        hic
+                                        et vel, rem corporis modi ipsum maxime cum placeat similique amet maiores illum
+                                        sit!
+                                        Necessitatibus accusamus cum dicta perferendis?</p>
+                                </div>
+                                <div class="feedback__bottom">
+                                    <img src="img/page/products/img1.jpg" alt="product" class="feedback__product">
+                                    <h5 class="feedback__name-product">Диван Orange-Line Родео SF wcbwuefw cuwef
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="feedback__block">
+                                <div class="feedback__top">
+                                    <div class="feedback__icon">
+                                        <img src="img/page/icons/user.svg" alt="user">
+                                    </div>
+                                    <div class="feedback__user">
+                                        <div class="feedback__name">Іван Стедниця</div>
+                                        <div class="feedback__rating">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                            <img src="img/page/icons/full-star.svg" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="feedback__date">25.01.2024</div>
+                                </div>
+                                <div class="feedback__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod esse aliquid
+                                        delectus
+                                        eveniet sequi deserunt repellendus accusantium dolores asperiores animi ipsum
+                                        commodi
+                                        beatae alias repellat, earum autem porro quos eos.
+                                        Perferendis eius cumque voluptatum pariatur nisi assumenda accusamus nemo,
+                                        eligendi
+                                        est
+                                        architecto at sapiente ut unde numquam autem velit nam optio saepe neque
+                                        possimus
+                                        et!
+                                        Nisi fugit doloremque temporibus consectetur.
+                                        Recusandae libero perspiciatis exercitationem, expedita possimus sit officiis
+                                        explicabo?
+                                        Error fuga est rem non soluta fugiat amet, fugit id eligendi exercitationem
+                                        aliquam
+                                        pariatur ad, quia commodi necessitatibus. Nisi, tempore fugiat.
+                                        Voluptatibus reprehenderit doloremque ducimus sint asperiores commodi ea aut,
+                                        nisi
+                                        hic
+                                        et vel, rem corporis modi ipsum maxime cum placeat similique amet maiores illum
+                                        sit!
+                                        Necessitatibus accusamus cum dicta perferendis?</p>
+                                </div>
+                                <div class="feedback__bottom">
+                                    <img src="img/page/products/img1.jpg" alt="product" class="feedback__product">
+                                    <h5 class="feedback__name-product">Диван Orange-Line Родео SF wcbwuefw cuwef
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__faq faq faq--margin">
+                <div class="faq__container">
+                    <h3 class="faq__title">Питання, які часто задають про Ліжка</h3>
+                    <ul class="faq__list">
+                        <li class="faq__block">
+                            <h4 class="faq__name-block icon-quetionmark"><span>Яке ліжко краще підійде для
+                                    “хрущьовки”?</span></h4>
+                            <div class="faq__text">
+                                <p>
+                                    Односпальне ліжко — оптимальний варіант для сну однієї людини. Вироби представлені в
+                                    декількох стандартних розмірах по ширині: 80-90, рідше — 100 сантиметрів.
+                                </p>
+                                <p>
+                                    Полуторні ліжка нагадують односпальні, але зі збільшеною шириною — в середньому
+                                    120-140 сантиметрів. Меблі підійдуть для одиночного сну людям з великою статурою або
+                                    для худорлявої пари.
+                                </p>
+                                <p> Двоспальне місце для сну відрізняється простором і комфортом для двох дорослих, а
+                                    також сімей, в яких діти люблять засинати разом з батьками. Ширина ліжка — від 160
+                                    см при стандартній довжині, а в розмірі king size — понад 200 см.</p>
+
+                            </div>
+                        </li>
+                        <li class="faq__block">
+                            <h4 class="faq__name-block icon-quetionmark"><span>Як підібрати розмір ліжка</span></h4>
+                            <div class="faq__text">
+                                <p>
+                                    Односпальне ліжко — оптимальний варіант для сну однієї людини. Вироби представлені в
+                                    декількох стандартних розмірах по ширині: 80-90, рідше — 100 сантиметрів.
+                                </p>
+                                <p>
+                                    Полуторні ліжка нагадують односпальні, але зі збільшеною шириною — в середньому
+                                    120-140 сантиметрів. Меблі підійдуть для одиночного сну людям з великою статурою або
+                                    для худорлявої пари.
+                                </p>
+                                <p> Двоспальне місце для сну відрізняється простором і комфортом для двох дорослих, а
+                                    також сімей, в яких діти люблять засинати разом з батьками. Ширина ліжка — від 160
+                                    см при стандартній довжині, а в розмірі king size — понад 200 см.</p>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page__features features features--bg-color features--margin">
+                <div class="features__container">
+                    <div class="features__block">
+                        <img src="img/page/features/car.svg" alt="icon" class="features__icon">
+                        <h5 class="features__text">Безкоштовна доставка</h5>
+                    </div>
+                    <div class="features__block">
+                        <img src="img/page/features/box.svg" alt="icon" class="features__icon">
+                        <h5 class="features__text">Безкоштовна збірка</h5>
+                    </div>
+                    <div class="features__block">
+                        <img src="img/page/features/logistic.svg" alt="icon" class="features__icon">
+                        <h5 class="features__text">Післягарантійне обслуговування</h5>
+                    </div>
+                    <div class="features__block">
+                        <img src="img/page/features/promotion.svg" alt="icon" class="features__icon">
+                        <h5 class="features__text">Знижки клієнтам</h5>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <div id="sss"></div> -->
+
+    </main>
+    <footer class="footer">
+        <!-- <div class="footer__container"> -->
+        <div class="footer__top">
+            <div class="footer__container footer__container--changed">
+                <div class="footer__block">
+                    <img src="img/header/logo.svg" alt="logo" class="footer__logo">
+                    <div class="footer__social-media">
+                        Приєднуйтесь:
+                        <div class="footer__images-social-media">
+                            <a href="#"><img src="img/footer/facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="img/footer/instagram.svg" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <div class="footer__social-media">
+                        Допомога і консультація::
+                        <div class="footer__images-social-media">
+                            <a href="#">
+                                <img src="img/footer/whatsapp.svg" alt="whatsapp">
+                            </a>
+                            <a href="#"> <img src="img/footer/telegram.svg" alt="telegram"></a>
+                            <a href="#"><img src="img/footer/viber.svg" alt="viber"></a>
+                        </div>
+                    </div>
+                    <div class="footer__payment">
+                        <img src="img/footer/visa.svg" alt="visa">
+                        <img src="img/footer/mastercard.svg" alt="mastercard">
+                    </div>
+                </div>
+                <div class="footer__navigation">
+                    <div class="footer__block-nav">
+                        <h4 class="footer__title">Інформація</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Про нас</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Оплата</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Доставка та збірка</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Відгуки</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Блог</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Контакти</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Мапа сайту</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block-nav">
+                        <h4 class="footer__title">Категорії</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Ліжка</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Матраци</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">М'які меблі</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Шафи</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Комоди</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Тумби</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Столи</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Стільці</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Меблеві стіни</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Кухні</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block-nav">
+                        <h4 class="footer__title">Клієнтам</h4>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Акції</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Розпродаж</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Купити в кредит</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Обмін та повернення товару</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Часто задавані питання</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Умови покупки</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Політика конфіденційності</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer__info">
+                    <div class="footer__block-info">
+                        <div class="footer__wrapper-icon">
+                            <img alt="telephone" src="img/footer/tel.svg" class="footer__icon icon-tel">
+                        </div>
+                        <div class="footer__actions-numbers">
+                            <div class="footer__numbers">
+                                <a href="tel:+380679294545">+38 067 929-45-45</a>
+                                <a href="tel:+380501334545"> +38 050 133-45-45
+                                </a><a href="tel:+380931707545">
+                                    +38 093 170-75-45
+                                </a>
+                            </div>
+                            <button class="footer__call">Передзвоніть мені</button>
+                        </div>
+
+
+                    </div>
+                    <div class="footer__block-info">
+                        <div class="footer__wrapper-icon">
+                            <img alt="location" src="img/footer/location.svg" class="footer__icon icon-tel">
+                        </div>
+                        <a href="#" class="footer__location">м. Київ, провулок Ізяславський 52, поверх 2</a>
+                    </div>
+                    <div class="footer__block-info">
+                        <div class="footer__wrapper-icon">
+                            <img alt="date" src="img/footer/calendar.svg" class="footer__icon icon-tel">
+                        </div>
+                        <h6>Працюємо щодня з 9:00 до 18:00</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__container">
+
+                <p>© KROVATO - Технології сну - <span id="currentYear">2024</span>. Всі права захищені.</p>
+            </div>
+        </div>
+        <!-- </div> -->
+    </footer>
+    </div>
+    <!-- Форматування -->
+    <script src="js/wNumb.min.js"></script>
+    <!-- Підключення noUiSlider -->
+    <script src="js/nouislider.min.js"></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+
+
+</html>

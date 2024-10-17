@@ -1,0 +1,100 @@
+.faq {
+   &__container {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(40);
+   }
+   &--margin {
+      margin-bottom: toRem(70);
+   }
+   &--padding {
+      padding-top: toRem(70);
+   }
+   &__title {
+      font-size: toRem(40);
+      font-weight: 600;
+      text-align: center;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(15);
+   }
+
+   &__block {
+      border-radius: toRem(8);
+      //   border: 1px solid $accentColor;
+      padding: toRem(18);
+      background-color: $mainBGColor;
+      box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.1s;
+      &.open-faq {
+         gap: toRem(18);
+         border: 2px solid $accentColor;
+      }
+   }
+
+   &__name-block {
+      display: block;
+      width: 100%;
+      font-size: toRem(19);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      flex-grow: 1;
+      text-align: left;
+      span {
+         flex-grow: 1;
+      }
+      //   justify-content: space-between;
+      &::before {
+         color: $accentColor;
+         font-size: toRem(36);
+      }
+      &::after {
+         content: "\e902";
+         font-family: "icons";
+         font-style: normal;
+         font-weight: normal;
+         font-variant: normal;
+         text-transform: none;
+         line-height: 1;
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+         display: block;
+         justify-self: flex-end;
+         transform: rotate(180deg);
+         transition: all 0.3s;
+      }
+      .open-faq & {
+         &::after {
+            transform: rotate(0deg);
+         }
+      }
+   }
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+      transition: all 0.3s;
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      .open-faq & {
+         opacity: 1;
+         height: 100%;
+         visibility: visible;
+      }
+      p {
+         font-size: toRem(16);
+         font-weight: 400;
+         line-height: 1.5;
+      }
+   }
+}
