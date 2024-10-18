@@ -1,0 +1,60 @@
+[class*=" _icon-"]::before {
+   display: inline-block;
+   font-family: "icons";
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   line-height: 1;
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-armour:before {
+   content: "\e900";
+}
+._icon-soldier-2:before {
+   content: "\e901";
+}
+._icon-soldier:before {
+   content: "\e902";
+}
+._icon-army:before {
+   content: "\e903";
+}
+._icon-hospital:before {
+   content: "\e904";
+}
+._icon-medal:before {
+   content: "\e905";
+}
+._icon-helmet:before {
+   content: "\e906";
+}
+._icon-target-2:before {
+   content: "\e907";
+}
+._icon-target-1:before {
+   content: "\e908";
+}
+._icon-discount:before {
+   content: "\e909";
+}
+._icon-facebook:before {
+   content: "\e90a";
+}
+._icon-phone:before {
+   content: "\e912";
+}
+._icon-linkedin:before {
+   content: "\e90e";
+}
+._icon-x:before {
+   content: "\e918";
+}
+._icon-icon-instagram:before {
+   content: "\e90b";
+}
+._icon-icon-youtube:before {
+   content: "\e90c";
+}
